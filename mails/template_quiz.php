@@ -48,7 +48,7 @@ Copyright 2016 LIVRE Movimento Cristão.
   </body>
   </html>';
 
-  return $html;
+  return utf8_decode($html);
 
 }
 
