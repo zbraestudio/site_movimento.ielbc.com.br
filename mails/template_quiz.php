@@ -25,16 +25,16 @@ function mail_quiz_getHtml($nome, $email, $telefone, $mensagem){
 
         <hr>
 
-        <p>Abaixo, segue uma cópia das informações que enviou pra gente:</p>
+        <p>SUA PERGUNTA:</p>
+        <span style="font-size: 20px;"> ' . nl2br($mensagem) . '</span>
+
+        <p>Veja também, as demais informações que você enviou pra gente:</p>
         <ul>
           <li><strong>Nome:</strong> ' . $nome . '</li>
           <li><strong>E-mail:</strong> ' . $email . '</li>
           <li><strong>Celular:</strong> ' . $telefone . '</li>
 
         </ul>
-
-        <p>SUA PERGUNTA:</p>
-        <span style="font-size: 20px;"> ' . nl2br($mensagem) . '</span>
       </td>
     </tr>
   </table>
@@ -66,6 +66,7 @@ function mail_quiz_send($nome, $email, $telefone, $mensagem){
   $mail->Port =             465;
 
   $mail->addAddress($email);
+  $mail->addCC('tiago@ielbc.com.br');
 
   $mail->addEmbeddedImage('./mails/images/logo.png', 'logo');
 
