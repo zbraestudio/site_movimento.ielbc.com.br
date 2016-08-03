@@ -3,6 +3,12 @@ a:hover {
   color: @cor_principal !important;
 }
 
+hr{
+  border-bottom: 2px dotted @cor_cinza_escuto;
+  margin: 50px auto;
+  width: 80%;
+}
+
 .icon.style2:hover {
   color: @cor_principal;
   border-color: @cor_principal;
@@ -125,3 +131,33 @@ img.image-right{
 }
 
 
+
+#main {
+
+  form {
+
+    input[type=text],
+    input[type=email],
+    textarea{
+      background-color: @cor_principal;
+      color: #FFF;
+      padding: 0 25px;
+      margin: 15px 0;
+      font-family: @fonte_titulos;
+      font-size: 25px;
+    }
+
+    textarea{
+      height: 350px!important;
+    }
+
+    legend {
+      color: @cor_principal;
+      font-family: @fonte_titulos;
+      font-size: 40px;
+
+    }
+
+  }
+
+}

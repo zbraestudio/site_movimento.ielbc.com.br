@@ -3,6 +3,11 @@ a:hover {
   border-bottom-color: transparent;
   color: #e6656c !important;
 }
+hr {
+  border-bottom: 2px dotted #585858;
+  margin: 50px auto;
+  width: 80%;
+}
 .icon.style2:hover {
   color: #e6656c;
   border-color: #e6656c;
@@ -112,4 +117,22 @@ img.image-right {
 }
 .tiles article > .image::after {
   background-image: none;
+}
+#main form input[type=text],
+#main form input[type=email],
+#main form textarea {
+  background-color: #e6656c;
+  color: #FFF;
+  padding: 0 25px;
+  margin: 15px 0;
+  font-family: "Source Sans Pro";
+  font-size: 25px;
+}
+#main form textarea {
+  height: 350px!important;
+}
+#main form legend {
+  color: #e6656c;
+  font-family: "Source Sans Pro";
+  font-size: 40px;
 }
