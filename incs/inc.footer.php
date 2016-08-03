@@ -29,7 +29,7 @@
         <!--<li><a href="#"  target="_blank" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>-->
         <!--<li><a href="#"  target="_blank" class="icon style2 fa-500px"><span class="label">500px</span></a></li>-->
         <li><a href="#"  target="_blank" class="icon style2 fa-phone"><span class="label">Phone</span></a></li>
-        <li><a href="tiago@ielbc.com.br"  target="_blank" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+        <li><a href="mailto:tiago@ielbc.com.br"  target="_blank" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
       </ul>
     </section>
     <ul class="copyright">
