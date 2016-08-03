@@ -1,0 +1,40 @@
+a:hover {
+  border-bottom-color: transparent;
+  color: #e6656c !important;
+}
+.icon.style2:hover {
+  color: #e6656c;
+  border-color: #e6656c;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+  border-bottom-color: #e6656c;
+  box-shadow: inset 0 -1px 0 0 #e6656c;
+}
+input[type="checkbox"]:focus + label:before,
+input[type="radio"]:focus + label:before {
+  border-color: #e6656c;
+  box-shadow: 0 0 0 1px #e6656c;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+button:hover,
+.button:hover {
+  color: #e6656c !important;
+  box-shadow: inset 0 0 0 2px #e6656c;
+}
+input[type="submit"].special:hover,
+input[type="reset"].special:hover,
+input[type="button"].special:hover,
+button.special:hover,
+.button.special:hover {
+  background-color: #e6656c;
+}
+.tiles article.style1 > .image:before {
+  background-color: #e6656c;
+}
