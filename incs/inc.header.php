@@ -9,7 +9,7 @@ include('variables.php');
 -->
 <html>
 <head>
-  <title>Phantom by HTML5 UP</title>
+  <title>LIVRES // Movimento Cristão</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
@@ -27,7 +27,7 @@ include('variables.php');
     <div class="inner">
 
       <!-- Logo -->
-      <a href="index.html" class="logo">
+      <a href="<?= $url_site; ?>" class="logo <?= (isset($subpage)?'subpage':null); ?>">
         <?= file_get_contents('./images/logo.svg');  ?>
       </a>
 
@@ -45,10 +45,9 @@ include('variables.php');
   <nav id="menu">
     <h2>Menu</h2>
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="generic.html">Ipsum veroeros</a></li>
-      <li><a href="generic.html">Tempus etiam</a></li>
-      <li><a href="generic.html">Consequat dolor</a></li>
-      <li><a href="elements.html">Elements</a></li>
+      <li><a href="<?= $url_site; ?>">Home</a></li>
+      <li><a href="<?= $url_site . '/quem-somos'; ?>">Quem Somos</a></li>
+      <li><a href="<?= $url_site . '/quiz'; ?>">Quiz</a></li>
+      <li><a href="<?= $url_site . '#contato'; ?>">Contato</a></li>
     </ul>
   </nav>

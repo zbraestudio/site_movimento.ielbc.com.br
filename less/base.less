@@ -45,19 +45,63 @@ button.special:hover,
   background-color: @cor_principal;
 }
 
-.logo svg{
-  width: 150px!important;
-  height: 150px!important;
+.tiles article svg{
+  width: 278px;
+  height: auto;
+
+  transition: width 0.3s;
+  -moz-transition: width 0.3s; /* Firefox 4 */
+  -webkit-transition: width 0.3s; /* Safari and Chrome */
+  -o-transition: width 0.3s; /* Opera */
 }
+.tiles article svg path{
+  fill: #FFF;
+}
+.tiles article:hover svg {
+  --animation-direction: alternate;
+  width: 150px;
+}
+
+.logo.subpage svg{
+  width: 85px;
+  height: auto;
+}
+
 .logo svg path{
   fill: @cor_cinza_escuto;
 
-  transition:fill 0.8s;
-  -moz-transition:fill 0.8s; /* Firefox 4 */
-  -webkit-transition:fill 0.8s; /* Safari and Chrome */
-  -o-transition:fill 0.8s; /* Opera */
+  transition:fill 0.3s;
+  -moz-transition:fill 0.3s; /* Firefox 4 */
+  -webkit-transition:fill 0.3s; /* Safari and Chrome */
+  -o-transition:fill 0.3s; /* Opera */
 }
 .logo svg:hover path{
   fill: @cor_principal;
   --animation-direction: alternate;
 }
+
+
+#main{
+  padding: 0 0 3em;
+}
+#main p{
+  font-family: "PT Serif",serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+img.image-left{
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+img.image-right{
+  float: right;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+
