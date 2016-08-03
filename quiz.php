@@ -13,19 +13,19 @@ include('incs/inc.header.php');
 
     <hr>
 
-    <form action="#" method="post">
+    <form action="script.quiz.send.php" method="post">
 
-      <input type="text" placeholder="Seu nome" required>
-      <input type="email" placeholder="Seu e-mail" required>
+      <input type="text" placeholder="Seu nome" name="nome" required>
+      <input type="email" placeholder="Seu e-mail" name="email" required>
 
       <fieldset>
         <legend>Celular(es) // Whats App // Telegram</legend>
-        <input type="text" placeholder="Seu celular" required pattern="\(\d{2}\)\d{4}-\d{4}">
+        <input type="text" placeholder="Seu celular" name="celular" required>
       </fieldset>
 
       <fieldset>
         <legend>Sua pergunta</legend>
-        <textarea placeholder="Pergunte o que quiser" required></textarea>
+        <textarea placeholder="Pergunte o que quiser" name="pergunta" required></textarea>
       </fieldset>
 
       <button type="submit">Enviar</button>
