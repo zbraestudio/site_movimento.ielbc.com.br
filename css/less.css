@@ -38,3 +38,21 @@ button.special:hover,
 .tiles article.style1 > .image:before {
   background-color: #e6656c;
 }
+.logo svg {
+  width: 150px!important;
+  height: 150px!important;
+}
+.logo svg path {
+  fill: #585858;
+  transition: fill 0.8s;
+  -moz-transition: fill 0.8s;
+  /* Firefox 4 */
+  -webkit-transition: fill 0.8s;
+  /* Safari and Chrome */
+  -o-transition: fill 0.8s;
+  /* Opera */
+}
+.logo svg:hover path {
+  fill: #e6656c;
+  --animation-direction: alternate;
+}

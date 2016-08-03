@@ -28,7 +28,7 @@ include('variables.php');
 
       <!-- Logo -->
       <a href="index.html" class="logo">
-        <span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
+        <?= file_get_contents('./images/logo.svg');  ?>
       </a>
 
       <!-- Nav -->
