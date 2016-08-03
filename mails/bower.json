@@ -1,0 +1,22 @@
+{
+  "name": "sendMail",
+  "homepage": "https://github.com/tihhgoncalves/sendMail",
+  "authors": [
+    "Tihh Gonçalves <tihh.gon@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "PHPMailer": "https://github.com/PHPMailer/PHPMailer.git#^5.2.16",
+    "bootstrap": "^3.3.6",
+    "bootstrap-device-debug": "*"
+  }
+}
