@@ -39,6 +39,21 @@ button.special:hover,
 .tiles article.style1 > .image:before {
   background-color: #e6656c;
 }
+.tiles article.style2 > .image:before {
+  background-color: #008AB8;
+}
+.tiles article.style3 > .image:before {
+  background-color: #008A64;
+}
+.tiles article.style4 > .image:before {
+  background-color: #F6B242;
+}
+.tiles article.style5 > .image:before {
+  background-color: #e6656c;
+}
+.tiles article.style6 > .image:before {
+  background-color: #e6656c;
+}
 .tiles article svg {
   width: 278px;
   height: auto;
@@ -94,4 +109,7 @@ img.image-right {
   float: right;
   margin-left: 15px;
   margin-bottom: 10px;
+}
+.tiles article > .image::after {
+  background-image: none;
 }

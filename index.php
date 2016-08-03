@@ -16,7 +16,7 @@ include('incs/inc.header.php');
 				<a href="generic.html">
 					<h2><?= file_get_contents('./images/logo_next.svg');  ?></h2>
 					<div class="content">
-						<p>PEstamos sempre perto de muita gente, mas ser próximo é diferente, precisa dar um passo a mais.</p>
+						<p>Estamos sempre perto de muita gente, mas ser próximo é diferente, precisa dar um passo a mais.</p>
 					</div>
 				</a>
 			</article>
