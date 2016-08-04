@@ -18,12 +18,14 @@ $mailer = new PHPMailer;
 $mailer->isSMTP();
 $mailer->Host =             'smtp.gmail.com';
 $mailer->SMTPAuth =         true;
-$mailer->Username =         'zbra.enviador@gmail.com';
-$mailer->Password =         'zbrazbra';
+$mailer->Username =         'envia@novabrazil.art.br';
+$mailer->Password =         'nbrazil123';
 $mailer->SMTPSecure =       'ssl';
 $mailer->Port =             465;
+
+$mailer->CharSet = "UTF-8";
 $mailer->addEmbeddedImage($path_site . 'mails/images/logo.png', 'logo');
-$mailer->setFrom('tiago@ielbc.com.br', utf8_decode('LIVRES // Movimento Cristão'));
+$mailer->setFrom('tiago@ielbc.com.br', utf8_decode('LIVRES // Movimento CristÃ£o'));
 $mailer->isHTML(true);
 
 ?>

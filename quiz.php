@@ -19,7 +19,7 @@ include('incs/inc.header.php');
       <input type="email" placeholder="Seu e-mail" name="email" required>
 
       <div class="anonimo_opcao sim">
-        <input id="anonimo1" type="radio" name="anonimo" value="Não">
+        <input id="anonimo1" type="radio" name="anonimo" value="Não" checked="checked">
         <label for="anonimo1"><span><span></span></span>Na hora que minha pergunta for respondida, pode falar meu nome junto.</label>
       </div>
 

@@ -10,7 +10,7 @@ function mail_quiz_getHtml($nome, $email, $anonimo, $telefone, $mensagem){
   <table width="100%" border="0" cellspacing="0" cellpadding="0">
     <tr>
       <td style="background-color: #F8F8F8; border: 1px solid #EEEEEE;; background-image: url(cid:logo); background-repeat:no-repeat; background-position: 15px center; line-height:72px;padding-left: 85px; font-size:20px;color: #666666;">
-        Bem vindo
+        QUIZ
       </td>
     </tr>
     <tr>
@@ -25,14 +25,14 @@ function mail_quiz_getHtml($nome, $email, $anonimo, $telefone, $mensagem){
         <hr>
 
         <p>SUA PERGUNTA:</p>
-        <span style="font-size: 20px;"> ' . nl2br($mensagem) . '</span>
+        <span style="color: #e6656c;font-size: 20px; margin: 25px 0;"> ' . nl2br($mensagem) . '</span>
 
         <p>Veja também, as demais informações que você enviou pra gente:</p>
         <ul>
-          <li><strong>Nome:</strong> ' . $nome . (($anonimo)?' <b> (não mencionar o nome)</b>':null) . '</li>
+          <li><strong>Nome:</strong> ' . $nome . (($anonimo)?' <span style="color: #e6656c;font-weight: bold;"> (não mencionar o nome)</span>':null) . '</li>
           <li><strong>E-mail:</strong> ' . $email . '</li>
           <li><strong>Celular:</strong> ' . $telefone . '</li>
-          <li><strong>Anônimo:</strong> ' . $anonimo . '</li>
+          <li><strong>Anônimo:</strong> ' . (($anonimo)?'Sim.':'Não.'). '</li>
 
         </ul>
       </td>
@@ -52,20 +52,20 @@ Copyright 2016 LIVRE Movimento Cristão.
 
 }
 
-function mail_quiz_send($nome, $email, $telefone, $mensagem){
+function mail_quiz_send($nome, $email, $anonimo, $telefone, $mensagem){
   global $mailer, $url_site;
 
   $mailer->addAddress($email);
   $mailer->addCC('tiago@ielbc.com.br');
 
   $mailer->Subject = 'Recebemos sua pergunta do QUIZ!';
-  $mailer->Body    = mail_quiz_getHtml($nome, $email, $telefone, $mensagem);
+  $mailer->Body    = mail_quiz_getHtml($nome, $email, $anonimo, $telefone, $mensagem);
 
   if($mailer->send()) {
     header('LOCATION: ' . $url_site . '/quiz-obrigado');
     exit;
   } else {
-    die('ERRO: ' . $mail->ErrorInfo);
+    die('ERRO: ' . $mailer->ErrorInfo);
   }
 
 }
