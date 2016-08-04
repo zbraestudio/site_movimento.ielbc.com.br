@@ -139,8 +139,8 @@ img.image-right {
 #main form input[type=text],
 #main form input[type=email],
 #main form textarea {
-  background-color: #e6656c;
-  color: #FFF;
+  background-color: #DDDDDD;
+  color: #585858;
   padding: 0 25px;
   margin: 15px 0;
   font-family: "Source Sans Pro", Helvetica, sans-serif !important;
@@ -204,8 +204,8 @@ img.image-right {
 .anonimo_opcao {
   padding: 10px 0;
 }
-.anonimo_opcao.sim label {
-  color: #459f7d;
+.anonimo_opcao.nao label {
+  color: #AAA;
   font-weight: 600;
   font-family: "Source Sans Pro", Helvetica, sans-serif !important;
 }

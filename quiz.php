@@ -23,7 +23,7 @@ include('incs/inc.header.php');
         <label for="anonimo1"><span><span></span></span>Na hora que minha pergunta for respondida, pode falar meu nome junto.</label>
       </div>
 
-      <div class="anonimo_opcao">
+      <div class="anonimo_opcao nao">
         <input id="anonimo2" type="radio" name="anonimo" value="Sim">
         <label for="anonimo2"><span><span></span></span>Não! Quero perguntar anonimamente e que meu nome não seja mencionado.</label>
       </div>
