@@ -16,6 +16,30 @@ hr{
   border-color: @cor_principal;
 }
 
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus, textarea:focus{
+  border-bottom-color: @cor_principal;
+}
+
+input[type="submit"].special:hover,
+input[type="reset"].special:hover,
+input[type="button"].special:hover,
+button.special:hover,
+.button.special:hover {
+  background-color: @cor_principal;
+}
+
+input[type="submit"].special:active,
+input[type="reset"].special:active,
+input[type="button"].special:active,
+button.special:active,
+.button.special:active {
+  background-color:  @cor_principal;
+}
+
 
 .tiles article.style1 > .image:before {
   background-color: @cor_principal;

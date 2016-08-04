@@ -12,6 +12,28 @@ hr {
   color: #e6656c;
   border-color: #e6656c;
 }
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+  border-bottom-color: #e6656c;
+}
+input[type="submit"].special:hover,
+input[type="reset"].special:hover,
+input[type="button"].special:hover,
+button.special:hover,
+.button.special:hover {
+  background-color: #e6656c;
+}
+input[type="submit"].special:active,
+input[type="reset"].special:active,
+input[type="button"].special:active,
+button.special:active,
+.button.special:active {
+  background-color: #e6656c;
+}
 .tiles article.style1 > .image:before {
   background-color: #e6656c;
 }

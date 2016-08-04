@@ -3,16 +3,16 @@
 <footer id="footer">
   <div class="inner">
     <section>
-      <h2>Entre em contato</h2>
-      <form method="post" action="#">
+      <h2>Fale com a gente</h2>
+      <form method="post" action="script.contato.send.php">
         <div class="field half first">
-          <input type="text" name="name" id="name" placeholder="Seu nome" />
+          <input type="text" name="nome" id="name" placeholder="Seu nome" required="" />
         </div>
         <div class="field half">
-          <input type="email" name="email" id="email" placeholder="Seu e-mail" />
+          <input type="email" name="email" id="email" placeholder="Seu e-mail" required="" />
         </div>
         <div class="field">
-          <textarea name="message" id="message" placeholder="Deixe sua mensagem"></textarea>
+          <textarea name="mensagem" id="message" placeholder="Deixe sua mensagem" required=""></textarea>
         </div>
         <ul class="actions">
           <li><input type="submit" value="Enviar" class="special" /></li>
@@ -20,7 +20,7 @@
       </form>
     </section>
     <section>
-      <h2>Siga a gente</h2>
+      <h2>Let's go!</h2>
       <ul class="icons">
         <li><a href="<?= $midiasocial_facebook; ?>" target="_blank" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
         <li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>

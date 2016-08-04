@@ -1,6 +1,6 @@
 <?
 
-function mail_quiz_getHtml($nome, $email, $anonimo, $telefone, $mensagem){
+function mail_contato_getHtml($nome, $email, $mensagem){
 
   $html = '<html>
   <head>
@@ -10,30 +10,27 @@ function mail_quiz_getHtml($nome, $email, $anonimo, $telefone, $mensagem){
   <table width="100%" border="0" cellspacing="0" cellpadding="0">
     <tr>
       <td style="background-color: #F8F8F8; border: 1px solid #EEEEEE;; background-image: url(cid:logo); background-repeat:no-repeat; background-position: 15px center; line-height:72px;padding-left: 85px; font-size:20px;color: #666666;">
-        QUIZ
+        CONTATO
       </td>
     </tr>
     <tr>
       <td style="border:1px solid #EEEEEE; border-top: 0; background-color: #FFF; padding: 35px; color:#666666;">
         <p><strong>Olá ' . $nome . ', tudo bem?</strong></p>
 
-        <p>Recebemos sua pergunta e assim que selecionarmos ela, será respondida em um de nossos encontros do NEXT\'s.
-        Para saber mais sobre nossos encontros, <a href="http://movimento.ielbc.com.br">clique aqui</a>.</p>
+        <p>Recebemos sua mensagem e assim que for possível estaremos entrando em contato com você para respondê-la.</p>
 
-        <p>Aproveite e faça mais perguntas! <br>Pode fazer quantas quiser, corre lá: http://movimento.ielbc.com.br/quiz</p>
+        <p>Aproveite e faça perguntas no nosso QUIZ!<br>Pode fazer quantas quiser, corre lá: http://movimento.ielbc.com.br/quiz</p>
 
         <hr>
 
-        <p>SUA PERGUNTA:</p>
+        <p>SUA MENSAGEM:</p>
         <span style="color: #e6656c;font-size: 20px; margin: 25px 0;"> ' . nl2br($mensagem) . '</span>
 
         <p>Veja também, as demais informações que você enviou pra gente:</p>
         <ul>
-          <li><strong>Nome:</strong> ' . $nome . (($anonimo)?' <span style="color: #e6656c;font-weight: bold;"> (não mencionar o nome)</span>':null) . '</li>
+          <li><strong>Nome:</strong> ' . $nome . '</li>
           <li><strong>E-mail:</strong> ' . $email . '</li>
-          <li><strong>Celular:</strong> ' . $telefone . '</li>
-          <li><strong>Anônimo:</strong> ' . (($anonimo)?'Sim.':'Não.'). '</li>
-
+          <li><strong>Mensagem:</strong> ' . $mensagem . '</li>
         </ul>
       </td>
     </tr>
@@ -52,17 +49,17 @@ Copyright 2016 LIVRE Movimento Cristão.
 
 }
 
-function mail_quiz_send($nome, $email, $anonimo, $telefone, $mensagem){
+function mail_contato_send($nome, $email, $mensagem){
   global $mailer, $url_site;
 
   $mailer->addAddress($email);
   $mailer->addCC('tiago@ielbc.com.br');
 
-  $mailer->Subject = 'Recebemos sua pergunta do QUIZ!';
-  $mailer->Body    = mail_quiz_getHtml($nome, $email, $anonimo, $telefone, $mensagem);
+  $mailer->Subject = 'Recebemos sua mensagem!';
+  $mailer->Body    = mail_contato_getHtml($nome, $email, $mensagem);
 
   if($mailer->send()) {
-    header('LOCATION: ' . $url_site . '/quiz-obrigado');
+    header('LOCATION: ' . $url_site . '/contato-obrigado');
     exit;
   } else {
     die('ERRO: ' . $mailer->ErrorInfo);

@@ -13,7 +13,7 @@ include('incs/inc.header.php');
 				<span class="image">
 					<img src="images/pic01.jpg" alt="" />
 				</span>
-				<a href="generic.html">
+				<a href="">
 					<h2><?= file_get_contents('./images/logo_next.svg');  ?></h2>
 					<div class="content">
 						<p>Estamos sempre perto de muita gente, mas ser próximo é diferente, precisa dar um passo a mais.</p>
@@ -24,7 +24,7 @@ include('incs/inc.header.php');
 				<span class="image">
 					<img src="images/pic02.jpg" alt="" />
 				</span>
-				<a href="generic.html">
+				<a href="">
 					<h2><?= file_get_contents('./images/logo_talmidim.svg');  ?></h2>
 					<div class="content">
 						<p>Pessoas precisam de Deus. Pessoas precisam de pessoas. Pessoalmente, queremos crescer.</p>
@@ -35,7 +35,7 @@ include('incs/inc.header.php');
 				<span class="image">
 					<img src="images/pic03.jpg" alt="" />
 				</span>
-				<a href="generic.html">
+				<a href="">
 					<h2><?= file_get_contents('./images/logo_lirios.svg');  ?></h2>
 					<div class="content">
 						<p>De mulher pra mulher. Depois de ter criado tudo, viu que faltava ainda elas para chamar sua perfeita criação de completa. </p>
@@ -46,7 +46,7 @@ include('incs/inc.header.php');
 				<span class="image">
 					<img src="images/pic04.jpg" alt="" />
 				</span>
-				<a href="generic.html">
+				<a href="">
 					<h2><?= file_get_contents('./images/logo_deeper.svg');  ?></h2>
 					<div class="content">
 						<p>Música é uma desculpa, pra falarmos do amor de Deus. Adoração é um estilo de viver. </p>
