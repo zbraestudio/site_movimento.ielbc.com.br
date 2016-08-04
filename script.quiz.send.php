@@ -6,7 +6,8 @@ $nome =     $_POST['nome'];
 $email =    $_POST['email'];
 $celular =  $_POST['celular'];
 $pergunta = $_POST['pergunta'];
+$anonimo =  ($_POST['anonimo'] == 'Sim');
 
-mail_quiz_send($nome, $email, $celular, $pergunta);
+mail_quiz_send($nome, $email, $anonimo, $celular, $pergunta);
 
 ?>

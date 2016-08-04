@@ -1,6 +1,6 @@
 <?
 
-function mail_quiz_getHtml($nome, $email, $telefone, $mensagem){
+function mail_quiz_getHtml($nome, $email, $anonimo, $telefone, $mensagem){
 
   $html = '<html>
   <head>
@@ -29,9 +29,10 @@ function mail_quiz_getHtml($nome, $email, $telefone, $mensagem){
 
         <p>Veja também, as demais informações que você enviou pra gente:</p>
         <ul>
-          <li><strong>Nome:</strong> ' . $nome . '</li>
+          <li><strong>Nome:</strong> ' . $nome . (($anonimo)?' <b> (não mencionar o nome)</b>':null) . '</li>
           <li><strong>E-mail:</strong> ' . $email . '</li>
           <li><strong>Celular:</strong> ' . $telefone . '</li>
+          <li><strong>Anônimo:</strong> ' . $anonimo . '</li>
 
         </ul>
       </td>
@@ -57,20 +58,8 @@ function mail_quiz_send($nome, $email, $telefone, $mensagem){
   $mailer->addAddress($email);
   $mailer->addCC('tiago@ielbc.com.br');
 
-<<<<<<< HEAD
-  $mail->CharSet =          'UTF-8';
-  $mail->isSMTP();
-  $mail->Host =             'smtp.gmail.com';
-  $mail->SMTPAuth =         true;
-  $mail->Username =         'zbra.enviador@gmail.com';
-  $mail->Password =         'zbrazbra';
-  $mail->SMTPSecure =       'ssl';
-  $mail->Port =             465;
-=======
   $mailer->Subject = 'Recebemos sua pergunta do QUIZ!';
   $mailer->Body    = mail_quiz_getHtml($nome, $email, $telefone, $mensagem);
->>>>>>> a2a945ab659067982e91097ea7d863bfef0fc727
-
 
   if($mailer->send()) {
     header('LOCATION: ' . $url_site . '/quiz-obrigado');
