@@ -1,5 +1,6 @@
 <?
-include('mails/template_quiz.php');
+include('./incs/variables.php');
+include($path_site . '/mails/template_quiz.php');
 
 $nome =     $_POST['nome'];
 $email =    $_POST['email'];
