@@ -48,6 +48,15 @@ hr {
   --animation-direction: alternate;
   width: 150px;
 }
+@media screen and (max-width: 736px) {
+  .tiles article svg {
+    --animation-direction: alternate;
+    width: 150px;
+  }
+  #main p {
+    font-size: 14px;
+  }
+}
 .logo.subpage svg {
   width: 85px;
   height: auto;
