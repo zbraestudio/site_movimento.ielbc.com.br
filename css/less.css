@@ -56,6 +56,9 @@ hr {
   .tiles article p {
     font-size: 14px!important;
   }
+  .tiles article > .image::before {
+    content: none;
+  }
 }
 .logo.subpage svg {
   width: 85px;
