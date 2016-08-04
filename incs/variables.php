@@ -16,13 +16,12 @@ include($path_site . 'bower_components/PHPMailer/PHPMailerAutoload.php');
 $mailer = new PHPMailer;
 
 $mailer->isSMTP();
-$mailer->Host =             'smtp.gmail.com';
+$mailer->Host =             'smtp.ielbc.com.br';
 $mailer->SMTPAuth =         true;
-$mailer->Username =         'envia@novabrazil.art.br';
-$mailer->Password =         'nbrazil123';
-$mailer->SMTPSecure =       'ssl';
+$mailer->Username =         'tiago@ielbc.com.br';
+$mailer->Password =         'nw041203';
+$mailer->SMTPSecure =       'tls';
 $mailer->Port =             465;
-
 $mailer->CharSet = "UTF-8";
 $mailer->addEmbeddedImage($path_site . 'mails/images/logo.png', 'logo');
 $mailer->setFrom('tiago@ielbc.com.br', utf8_decode('LIVRES // Movimento Cristão'));
