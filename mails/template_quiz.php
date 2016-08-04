@@ -1,5 +1,4 @@
 <?
-include('bower_components/PHPMailer/PHPMailerAutoload.php');
 
 function mail_quiz_getHtml($nome, $email, $telefone, $mensagem){
 
@@ -53,32 +52,17 @@ Copyright 2016 LIVRE Movimento Cristão.
 }
 
 function mail_quiz_send($nome, $email, $telefone, $mensagem){
+  global $mailer, $url_site;
 
-  /* Envia E-mail */
-  $mail = new PHPMailer;
+  $mailer->addAddress($email);
+  $mailer->addCC('tiago@ielbc.com.br');
 
-  $mail->isSMTP();
-  $mail->Host =             'smtp.gmail.com';
-  $mail->SMTPAuth =         true;
-  $mail->Username =         'zbra.enviador@gmail.com';
-  $mail->Password =         'zbrazbra';
-  $mail->SMTPSecure =       'ssl';
-  $mail->Port =             465;
-
-  $mail->addAddress($email);
-  $mail->addCC('tiago@ielbc.com.br');
-
-  $mail->addEmbeddedImage('./mails/images/logo.png', 'logo');
-
-  $mail->setFrom('tiago@ielbc.com.br', utf8_decode('LIVRES // Movimento Cristão'));
-  $mail->isHTML(true);
-
-  $mail->Subject = 'Recebemos sua pergunta do QUIZ!';
-  $mail->Body    = mail_quiz_getHtml($nome, $email, $telefone, $mensagem);
+  $mailer->Subject = 'Recebemos sua pergunta do QUIZ!';
+  $mailer->Body    = mail_quiz_getHtml($nome, $email, $telefone, $mensagem);
 
 
-  if($mail->send()) {
-    header('LOCATION: http://movimento.ielbc.com.br/quiz-obrigado');
+  if($mailer->send()) {
+    header('LOCATION: ' . $url_site . '/quiz-obrigado');
     exit;
   } else {
     die('ERRO: ' . $mail->ErrorInfo);

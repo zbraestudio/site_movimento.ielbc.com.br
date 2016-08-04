@@ -99,7 +99,7 @@ button.special:hover,
   padding: 0 0 3em;
 }
 #main p {
-  font-family: "PT Serif", serif;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
@@ -125,7 +125,7 @@ img.image-right {
   color: #FFF;
   padding: 0 25px;
   margin: 15px 0;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-size: 25px;
 }
 #main form textarea {
@@ -133,6 +133,6 @@ img.image-right {
 }
 #main form legend {
   color: #e6656c;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-size: 40px;
 }
