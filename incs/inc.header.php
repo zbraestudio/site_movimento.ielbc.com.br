@@ -17,6 +17,10 @@ include('variables.php');
   <link rel="stylesheet" href="css/less.css" />
   <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
   <!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+
+
+  <link rel="icon" href="<?= $url_site; ?>/favicon.png">
+
 </head>
 <body>
 <!-- Wrapper -->
