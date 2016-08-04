@@ -37,8 +37,8 @@ hr{
 }
 
 .tiles article svg{
-  width: 278px;
-  height: auto;
+  width: 200px;
+  height: 174px;
 
   transition: width 0.3s;
   -moz-transition: width 0.3s; /* Firefox 4 */
@@ -53,20 +53,36 @@ hr{
   width: 150px;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 1280px) {
   .tiles article svg {
     --animation-direction: alternate;
     width: 150px;
+    height: 125px;
+  }
+  .tiles article p{
+    font-size: 17px!important;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 736px) {
+  .tiles article svg {
+    --animation-direction: alternate;
+    width: 112px;
+    height:98px;
   }
 
   .tiles article p{
     font-size: 14px!important;
+    line-height: 18px!important;
   }
 
   .tiles article > .image::before{
     content: none;
   }
+
 }
+
+
 
 .logo.subpage svg{
   width: 85px;
