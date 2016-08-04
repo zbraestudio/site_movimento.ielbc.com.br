@@ -38,7 +38,7 @@ include('incs/inc.header.php');
         <textarea placeholder="Pergunte o que quiser" name="pergunta" required></textarea>
       </fieldset>
 
-      <button type="submit">Enviar</button>
+      <button type="submit" class="special">Enviar</button>
 
     </form>
 

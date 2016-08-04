@@ -188,9 +188,7 @@ img.image-right {
 }
 #main form input[type="submit"]:hover,
 #main form input[type="reset"]:hover,
-#main form input[type="button"]:hover,
-#main form button:hover,
-#main form .button:hover {
+#main form input[type="button"]:hover {
   color: #e6656c !important;
   box-shadow: inset 0 0 0 2px #e6656c;
 }
@@ -208,4 +206,7 @@ img.image-right {
   color: #AAA;
   font-weight: 600;
   font-family: "Source Sans Pro", Helvetica, sans-serif !important;
+}
+button.special:hover {
+  color: #FFF!important;
 }
