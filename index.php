@@ -44,7 +44,7 @@ include('incs/inc.header.php');
 			</article>
 			<article class="style4">
 				<span class="image">
-					<img src="images/pic03.jpg" alt="" />
+					<img src="images/pic04.jpg" alt="" />
 				</span>
 				<a href="generic.html">
 					<h2><?= file_get_contents('./images/logo_deeper.svg');  ?></h2>

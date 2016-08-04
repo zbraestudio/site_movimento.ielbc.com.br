@@ -48,7 +48,7 @@ Copyright 2016 LIVRE Movimento Cristão.
   </body>
   </html>';
 
-  return utf8_decode($html);
+  return $html;
 
 }
 
@@ -57,6 +57,7 @@ function mail_quiz_send($nome, $email, $telefone, $mensagem){
   /* Envia E-mail */
   $mail = new PHPMailer;
 
+  $mail->CharSet =          'UTF-8';
   $mail->isSMTP();
   $mail->Host =             'smtp.gmail.com';
   $mail->SMTPAuth =         true;

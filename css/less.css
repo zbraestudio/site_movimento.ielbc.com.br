@@ -48,13 +48,13 @@ button.special:hover,
   background-color: #008AB8;
 }
 .tiles article.style3 > .image:before {
-  background-color: #008A64;
+  background-color: #dc5b85;
 }
 .tiles article.style4 > .image:before {
   background-color: #F6B242;
 }
 .tiles article.style5 > .image:before {
-  background-color: #e6656c;
+  background-color: #008A64;
 }
 .tiles article.style6 > .image:before {
   background-color: #e6656c;
