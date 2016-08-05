@@ -69,8 +69,6 @@ button.special:active,
   -webkit-transition: width 0.3s;
   -o-transition: width 0.3s;
 
-  background-color: red;
-
 }
 .tiles article svg path {
   fill: #FFF;
