@@ -215,3 +215,7 @@ img.image-right {
 button.special:hover {
   color: #FFF!important;
 }
+
+.is-touch .tiles article > .image::before{
+  opacity: 0.2;
+}
