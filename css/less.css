@@ -12,6 +12,16 @@ hr {
   color: #e6656c;
   border-color: #e6656c;
 }
+#main {
+  padding: 0 0 3em;
+}
+#main p {
+  font-family: "Source Sans Pro", Helvetica, sans-serif !important;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
@@ -66,9 +76,14 @@ button.special:active,
 .tiles article svg path {
   fill: #FFF;
 }
+.tiles article p {
+  font-size: 17px!important;
+  line-height: 21px!important;
+}
 .tiles article:hover svg {
   --animation-direction: alternate;
   width: 150px;
+  height: 131px;
 }
 @media screen and (max-width: 1280px) {
   .tiles article svg {
@@ -112,16 +127,6 @@ button.special:active,
 .logo svg:hover path {
   fill: #e6656c;
   --animation-direction: alternate;
-}
-#main {
-  padding: 0 0 3em;
-}
-#main p {
-  font-family: "Source Sans Pro", Helvetica, sans-serif !important;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 28px;
-  margin-bottom: 20px;
 }
 img.image-left {
   float: left;
