@@ -12,15 +12,6 @@ hr {
   color: #e6656c;
   border-color: #e6656c;
 }
-
-#main p {
-  font-family: "Source Sans Pro", Helvetica, sans-serif !important;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 28px;
-  margin-bottom: 20px;
-}
-
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
@@ -62,13 +53,15 @@ button.special:active,
   background-color: #e6656c;
 }
 .tiles article svg {
-   width: 200px;
+  width: 200px;
   height: 174px;
   transition: width 0.3s;
   -moz-transition: width 0.3s;
+  /* Firefox 4 */
   -webkit-transition: width 0.3s;
+  /* Safari and Chrome */
   -o-transition: width 0.3s;
-
+  /* Opera */
 }
 .tiles article svg path {
   fill: #FFF;
@@ -76,34 +69,30 @@ button.special:active,
 .tiles article:hover svg {
   --animation-direction: alternate;
   width: 150px;
-  height: 132px;
 }
-
-.tiles article p{
-  font-size: 16px!important;
-  line-height: normal!important;
-}
-
-@media screen and (max-width: 980px) {
-  .tiles article svg,
-  .tiles article:hover svg{
-    width: 95px;
-    height: 83px;
+@media screen and (max-width: 1280px) {
+  .tiles article svg {
+    --animation-direction: alternate;
+    width: 150px;
+    height: 125px;
   }
-
-  .tiles article p{
-    font-size: 14px!important;
-  }
-}
-@media screen and (max-width: 480px) {
-  .tiles article svg,
-  .tiles article:hover svg{
-    width: 155px;
-    height: 136px;
-  }
-
-  .tiles article p{
+  .tiles article p {
     font-size: 17px!important;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 736px) {
+  .tiles article svg {
+    --animation-direction: alternate;
+    width: 112px;
+    height: 98px;
+  }
+  .tiles article p {
+    font-size: 14px!important;
+    line-height: 18px!important;
+  }
+  .tiles article > .image::before {
+    content: none;
   }
 }
 .logo.subpage svg {
@@ -127,7 +116,13 @@ button.special:active,
 #main {
   padding: 0 0 3em;
 }
-
+#main p {
+  font-family: "Source Sans Pro", Helvetica, sans-serif !important;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
 img.image-left {
   float: left;
   margin-right: 15px;
@@ -137,6 +132,10 @@ img.image-right {
   float: right;
   margin-left: 15px;
   margin-bottom: 10px;
+}
+#main img {
+  max-width: 100%;
+  height: auto;
 }
 .tiles article > .image::after {
   background-image: none;
@@ -214,8 +213,4 @@ img.image-right {
 }
 button.special:hover {
   color: #FFF!important;
-}
-
-.is-touch .tiles article > .image::before{
-  opacity: 0.2;
 }
