@@ -23,12 +23,12 @@
       <h2>Let's go!</h2>
       <ul class="icons">
         <li><a href="<?= $midiasocial_facebook; ?>" target="_blank" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
-        <li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
-        <li><a href="#"  target="_blank" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+        <!--<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>-->
+        <!--<li><a href="#"  target="_blank" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>-->
         <!--<li><a href="#"  target="_blank" class="icon style2 fa-dribbble"><span class="label">Dribbble</span></a></li>-->
         <!--<li><a href="#"  target="_blank" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>-->
         <!--<li><a href="#"  target="_blank" class="icon style2 fa-500px"><span class="label">500px</span></a></li>-->
-        <li><a href="#"  target="_blank" class="icon style2 fa-phone"><span class="label">Phone</span></a></li>
+        <li><a href="#"  target="_blank" class="icon style2 fa-phone" title="(47) 9650-6687 (Whats App e TELEGRAM)"><span class="label">Phone</span></a></li>
         <li><a href="mailto:tiago@ielbc.com.br"  target="_blank" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
       </ul>
     </section>
