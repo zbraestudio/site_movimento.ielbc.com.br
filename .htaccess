@@ -1,3 +1,4 @@
+#abra /quem-somos /quem-somos.php
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
