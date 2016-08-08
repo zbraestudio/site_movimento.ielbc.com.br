@@ -237,8 +237,7 @@ button.special:hover {
   margin-left: -10px;
 }
 .tooltipster-punk .tooltipster-box {
-  border-bottom-color: #CE191A !important;
-  background-color: blue;
+  border-bottom-color: #e6656c !important;
   -webkit-border-radius: 0 !important;
   -moz-border-radius: 0 !important;
   border-radius: 0 !important;
@@ -250,6 +249,9 @@ button.special:hover {
   font-family: "Source Sans Pro", Helvetica, sans-serif !important;
   font-size: 15px;
   line-height: 20px;
+}
+.tooltipster-punk.tooltipster-top .tooltipster-arrow-border {
+  border-top-color: #e6656c !important;
 }
 #chamada_quiz:hover {
   background-color: #49BC9D;

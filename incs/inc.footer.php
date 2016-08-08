@@ -28,7 +28,7 @@
         <!--<li><a href="#"  target="_blank" class="icon style2 fa-dribbble"><span class="label">Dribbble</span></a></li>-->
         <!--<li><a href="#"  target="_blank" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>-->
         <!--<li><a href="#"  target="_blank" class="icon style2 fa-500px"><span class="label">500px</span></a></li>-->
-        <li><a href="https://www.facebook.com/igrejalivre"  target="_blank" class="icon style2 fa-phone"><span class="label">Telefone</span></a></li>
+        <li><a href="javascript:void(0);" class="tooltip_telefone icon style2 fa-phone" title="(47) 9650-6687 (WhatsApp / TELEGRAM)"><span class="label">Telefone</span></a></li>
         <li><a href="mailto:tiago@ielbc.com.br"  target="_blank" class="icon style2 fa-envelope-o"><span class="label">E-mail</span></a></li>
       </ul>
     </section>

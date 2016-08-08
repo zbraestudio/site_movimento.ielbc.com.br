@@ -8,6 +8,14 @@ $(document).ready(function(){
       maxWidth: 400
     });
 
+
+    $('.tooltip_telefone').tooltipster({
+      theme: 'tooltipster-punk',
+      side: 'top',
+      maxWidth: 400,
+      trigger: 'click'
+    });
+
   });
 
 });
