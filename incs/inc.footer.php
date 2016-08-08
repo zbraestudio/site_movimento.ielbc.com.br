@@ -23,12 +23,12 @@
       <h2>Let's go!</h2>
       <ul class="icons">
         <li><a href="<?= $midiasocial_facebook; ?>" target="_blank" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
-        <!--<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>-->
-        <!--<li><a href="#"  target="_blank" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>-->
+        <li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="#"  target="_blank" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
         <!--<li><a href="#"  target="_blank" class="icon style2 fa-dribbble"><span class="label">Dribbble</span></a></li>-->
         <!--<li><a href="#"  target="_blank" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>-->
         <!--<li><a href="#"  target="_blank" class="icon style2 fa-500px"><span class="label">500px</span></a></li>-->
-        <li><a href="#"  target="_blank" class="icon style2 fa-phone" title="(47) 9650-6687 (Whats App e TELEGRAM)"><span class="label">Phone</span></a></li>
+        <li><a href="#"  target="_blank" class="icon style2 fa-phone"><span class="label">Phone</span></a></li>
         <li><a href="mailto:tiago@ielbc.com.br"  target="_blank" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
       </ul>
     </section>
@@ -38,6 +38,19 @@
   </div>
 </footer>
 
+<?
+
+
+$tooltip_quiz = 'Sabe aquela dúvida que você sempre teve?';
+$tooltip_quiz .= ' Clique aqui e pergunta no nosso QUIZ. ';
+$tooltip_quiz .= ' As perguntas selecionadas são respondidas nos nossos programas NEXT’s.';
+
+?>
+<a href="<?= $url_site; ?>/quiz" id="chamada_quiz"  class="tooltip_quiz" title="<?= $tooltip_quiz; ?>" >
+  <?= file_get_contents('./images/logo-quiz.svg');  ?>
+</a>
+
+
 </div>
 
 <!-- Scripts -->
@@ -45,7 +58,9 @@
 <script src="js/skel.min.js"></script>
 <script src="js/util.js"></script>
 <!--[if lte IE 8]><script src="js/ie/respond.min.js"></script><![endif]-->
+<script type="text/javascript" src="bower_components/tooltipster/dist/js/tooltipster.bundle.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/tihh.js"></script>
 
 </body>
 </html>

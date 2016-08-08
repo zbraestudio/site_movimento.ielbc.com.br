@@ -5,7 +5,10 @@ include('incs/inc.header.php');
 <!-- Main -->
 <div id="main">
   <div class="inner">
-    <h1>QUIZ</h1>
+
+    <div id="pagina_quiz_topo">
+    <?= file_get_contents('./images/logo-quiz.svg');  ?>
+    </div>
     <p>Sabe aquela dúvida que você sempre teve? <br>
       Ou talvez ouviu uma mensagem, mas não ficou muito claro o assunto?</p>
       <p>Preencha o formulário abaixo com suas perguntas e envie pra gente.<br>Elas serão selecionadas e respondidas nos nossos encontros NEXT's.

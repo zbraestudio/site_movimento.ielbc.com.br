@@ -21,6 +21,10 @@ include('variables.php');
 
   <link rel="icon" href="<?= $url_site; ?>/favicon.png">
 
+
+  <link rel="stylesheet" type="text/css" href="bower_components/tooltipster/dist/css/tooltipster.bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="bower_components/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-punk.min.css" />
+
 </head>
 <body>
 <!-- Wrapper -->

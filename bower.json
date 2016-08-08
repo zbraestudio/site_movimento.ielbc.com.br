@@ -12,6 +12,7 @@
     "tests"
   ],
   "dependencies": {
-    "PHPMailer": "https://github.com/PHPMailer/PHPMailer.git#^5.2.16"
+    "PHPMailer": "https://github.com/PHPMailer/PHPMailer.git#^5.2.16",
+    "tooltipster": "^4.1.2"
   }
 }
