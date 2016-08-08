@@ -7,7 +7,7 @@ if( $_SERVER['HTTP_HOST'] == 'localhost') {
   $path_site = '/dados/http/ielbc.com.br/movimento/';
 }
 
-$midiasocial_facebook = 'http://facebook.com/ielbc';
+$midiasocial_facebook = 'http://facebook.com/igrejalivre';
 
 
 /* Envia E-mail */
