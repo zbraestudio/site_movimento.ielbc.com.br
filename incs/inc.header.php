@@ -54,7 +54,8 @@ include('variables.php');
     <h2>Menu</h2>
     <ul>
       <li><a href="<?= $url_site; ?>">Home</a></li>
-      <li><a href="<?= $url_site . '/quem-somos'; ?>">Quem Somos</a></li>
+      <li><a href="<?= $url_site . '/sobre'; ?>">Sobre nós</a></li>
+      <li><a href="https://medium.com/esta%C3%A7%C3%A3o-movimento-crist%C3%A3o" target="_blank">Artigos</a></li>
       <li><a href="<?= $url_site . '/quiz'; ?>">Quiz</a></li>
       <li><a href="<?= $url_site . '#contato'; ?>">Contato</a></li>
     </ul>
