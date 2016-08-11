@@ -1,10 +1,10 @@
 <?
 if( $_SERVER['HTTP_HOST'] == 'localhost') {
-  $url_site = 'http://localhost/github/site_movimento.ielbc.com.br';
+  $url_site = 'http://localhost/github/site_www.livresweb.com';
   $path_site = 'D:\github\site_movimento.ielbc.com.br\\';
 } else {
-  $url_site = 'http://movimento.ielbc.com.br';
-  $path_site = '/dados/http/ielbc.com.br/movimento/';
+  $url_site = 'http://www.livresweb.com';
+  $path_site = '/dados/http/livresweb.com/www/';
 }
 
 $midiasocial_facebook = 'http://facebook.com/igrejalivre';
