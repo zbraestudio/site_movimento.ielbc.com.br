@@ -1,7 +1,7 @@
-<?
+﻿<?
 if( $_SERVER['HTTP_HOST'] == 'localhost') {
   $url_site = 'http://localhost/github/site_www.livresweb.com';
-  $path_site = 'D:\github\site_movimento.ielbc.com.br\\';
+  $path_site = 'D:\github\site_www.livresweb.com\\';
 } else {
   $url_site = 'http://www.livresweb.com';
   $path_site = '/dados/http/livresweb.com/www/';
