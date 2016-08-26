@@ -9,7 +9,7 @@ include('incs/inc.header.php');
             <div id="pagina_topo_bg" style="background-image: url(images/next-topo.png);">
             </div>
             <p>Tá lançado nossa primeira série no NEXT, chamada VINTAGE.<br>
-                Um convite a viajarmos juntos a era-bíblica, pra entendermos um pouco melhor alguns conceitos básicos da nossa caminhada cristã.</p>
+                Um convite para viajarmos juntos a <i>era-bíblica</i>, pra entendermos um pouco melhor alguns conceitos básicos da nossa caminhada cristã.</p>
             <h2>Quando vai rolar?</h2>
             <p>Não fique de fora! A partir de setembro, todas às sextas, depois das 22hrs.<br>
                 Exceto no segundo final de semana de cada mês, que será ao sábado, depois das 20hrs.
