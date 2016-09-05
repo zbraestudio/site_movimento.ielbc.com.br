@@ -31,7 +31,7 @@ include('incs/inc.header.php');
 					</div>
 				</a>
 			</article>
-			<article class="style3">
+			<!--<article class="style3">
 				<span class="image">
 					<img src="images/pic03.jpg" alt="" />
 				</span>
@@ -41,7 +41,7 @@ include('incs/inc.header.php');
 						<p>De mulher pra mulher. Depois de ter criado tudo, viu que faltava ainda elas para chamar sua perfeita criação de completa. </p>
 					</div>
 				</a>
-			</article>
+			</article>-->
 			<article class="style4">
 				<span class="image">
 					<img src="images/pic04.jpg" alt="" />
