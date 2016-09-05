@@ -13,7 +13,7 @@ include('incs/inc.header.php');
 				<span class="image">
 					<img src="images/pic01.jpg" alt="" />
 				</span>
-				<a href="">
+				<a href="<?= $url_site . '/next'; ?>">
 					<h2><?= file_get_contents('./images/logo_next.svg');  ?></h2>
 					<div class="content">
 						<p>Estamos sempre perto de muita gente, mas ser próximo é diferente, precisa dar um passo a mais.</p>
