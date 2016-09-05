@@ -8,6 +8,7 @@ if( $_SERVER['HTTP_HOST'] == 'localhost') {
 }
 
 $midiasocial_facebook = 'http://facebook.com/igrejalivre';
+$midiasocial_youtube = 'https://www.youtube.com/channel/UC-imHFpnCTsiiaJTAvd1OOg';
 
 
 /* Envia E-mail */
