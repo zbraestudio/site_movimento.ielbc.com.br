@@ -17,9 +17,9 @@ include($path_site . 'bower_components/PHPMailer/PHPMailerAutoload.php');
 $mailer = new PHPMailer;
 
 $mailer->isSMTP();
-$mailer->Host =             'smtp.ielbc.com.br';
+$mailer->Host =             'smtp.livresweb.com';
 $mailer->SMTPAuth =         true;
-$mailer->Username =         'tiago@ielbc.com.br';
+$mailer->Username =         'tiago@livresweb.com';
 $mailer->Password =         'nw041203';
 //$mailer->SMTPSecure =       'tls';
 $mailer->Port =             587;

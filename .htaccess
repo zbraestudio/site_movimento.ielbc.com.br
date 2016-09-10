@@ -1,3 +1,5 @@
+Redirect 301 /artigos            https://medium.com/esta%C3%A7%C3%A3o-movimento-crist%C3%A3o
+
 #abra /quem-somos /quem-somos.php
 <IfModule mod_rewrite.c>
 RewriteEngine On
