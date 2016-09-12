@@ -18,6 +18,36 @@ include('incs/inc.header.php');
 
             <hr>
 
+            <h2>Vídeos</h2>
+
+            <ul class="video_lista">
+                <?
+                $youtube_lista = 'PLCrgWS5wXc-pla_pBTL4L2XJbLXfYxN6Q';
+                $url_api = 'https://www.googleapis.com/youtube/v3/playlistItems?playlistId=' . $youtube_lista . '&key=' . $youtube_api_key . '&part=snippet';
+                $youtube_content = file_get_contents($url_api);
+                $youtube = json_decode(utf8_encode($youtube_content));
+
+
+                //die($youtube_api_key);
+                foreach($youtube->items as $item){
+
+                    $youtubeID = $item->snippet->resourceId->videoId;
+
+                    ?>
+                    <li>
+                        <a href="https://youtu.be/<?= $youtubeID; ?>" target="_blank" title="Assista esse episódio agora!">
+                            <div class="capa" style="background-image: url(https://i.ytimg.com/vi/<?= $youtubeID; ?>/maxresdefault.jpg);"></div>
+                        </a>
+                    </li>
+                    <?
+                }
+                ?>
+            </ul>
+
+            <div style="clear: both;"></div>
+
+            <hr>
+
             <h2>QUIZ</h2>
 
             <p>Aproveite a faça perguntas no <a href="<?= $url_site; ?>quiz">nosso Quiz</a>. As perguntas selecionadas serão respondidas durante os NEXT’s.</p>

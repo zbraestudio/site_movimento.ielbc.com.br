@@ -26,7 +26,10 @@ $mailer->Port =             587;
 
 $mailer->CharSet = "UTF-8";
 $mailer->addEmbeddedImage($path_site . 'mails/images/logo.png', 'logo');
-$mailer->setFrom('tiago@ielbc.com.br', 'LIVRES // Movimento Cristão');
+$mailer->setFrom('tiago@livresweb.com', 'LIVRES // Movimento Cristão');
 $mailer->isHTML(true);
+
+
+$youtube_api_key = 'AIzaSyCDdRciH_aNVPRCEpkky5CZLZ1f84ytgHs';
 
 ?>
