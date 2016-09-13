@@ -20,6 +20,9 @@ include('variables.php');
 
 
   <link rel="icon" href="<?= $url_site; ?>/favicon.png">
+  <meta property="og:image" content="<?= $url_site; ?>/images/shared.jpg">
+
+
 
 
   <link rel="stylesheet" type="text/css" href="bower_components/tooltipster/dist/css/tooltipster.bundle.min.css" />
