@@ -15,7 +15,6 @@ include('incs/inc.header.php');
                 Exceto no segundo final de semana de cada mês, que será ao sábado, depois das 20hrs.
             </p>
 
-
             <hr>
 
             <h2>Vídeos</h2>

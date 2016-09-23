@@ -326,3 +326,18 @@ ul.video_lista li div.capa {
   width: 212px;
   height: 121px;
 }
+#pagina_radio_topo {
+  background-color: #eed163;
+  padding: 100px 0;
+}
+#pagina_radio_topo svg {
+  width: 250px;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+#pagina_radio_topo svg path,
+#pagina_radio_topo svg polygon,
+#pagina_radio_topo svg rect {
+  fill: #211915;
+}
