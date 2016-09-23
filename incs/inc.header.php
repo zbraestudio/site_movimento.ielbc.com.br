@@ -18,12 +18,8 @@ include('variables.php');
   <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
   <!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 
-
   <link rel="icon" href="<?= $url_site; ?>/favicon.png">
   <meta property="og:image" content="<?= $url_site; ?>/images/shared.jpg">
-
-
-
 
   <link rel="stylesheet" type="text/css" href="bower_components/tooltipster/dist/css/tooltipster.bundle.min.css" />
   <link rel="stylesheet" type="text/css" href="bower_components/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-punk.min.css" />
@@ -61,9 +57,11 @@ include('variables.php');
       <li><a href="<?= $url_site . '/artigos'; ?>" target="_blank">Artigos  // Medium.com</a></li>
       <li><a href="<?= $url_site . '/quiz'; ?>">Quiz</a></li>
       <li><a href="<?= $url_site . '#contato'; ?>">Contato</a></li>
+
       <li class="submarcas">
         <a href="<?= $url_site . '/radio'; ?>"><?= file_get_contents('./images/logo_radio.svg');  ?></a>
         <a href="https://www.youtube.com/channel/UC-imHFpnCTsiiaJTAvd1OOg" target="_blank"><?= file_get_contents('./images/logo_tv.svg');  ?></a>
       </li>
+
     </ul>
   </nav>
