@@ -341,3 +341,18 @@ ul.video_lista li div.capa {
 #pagina_radio_topo svg rect {
   fill: #211915;
 }
+nav#menu ul li.submarcas a {
+  padding: 0;
+  display: inline;
+}
+nav#menu ul li.submarcas a svg {
+  float: left;
+  width: auto;
+  height: 50px;
+  margin: 15px 10px;
+}
+nav#menu ul li.submarcas a svg:not(:hover) path,
+nav#menu ul li.submarcas a svg:not(:hover) polygon,
+nav#menu ul li.submarcas a svg:not(:hover) rect {
+  fill: #FFF;
+}

@@ -61,5 +61,9 @@ include('variables.php');
       <li><a href="<?= $url_site . '/artigos'; ?>" target="_blank">Artigos  // Medium.com</a></li>
       <li><a href="<?= $url_site . '/quiz'; ?>">Quiz</a></li>
       <li><a href="<?= $url_site . '#contato'; ?>">Contato</a></li>
+      <li class="submarcas">
+        <a href="<?= $url_site . '/radio'; ?>"><?= file_get_contents('./images/logo_radio.svg');  ?></a>
+        <a href="https://www.youtube.com/channel/UC-imHFpnCTsiiaJTAvd1OOg" target="_blank"><?= file_get_contents('./images/logo_tv.svg');  ?></a>
+      </li>
     </ul>
   </nav>
