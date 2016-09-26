@@ -81,8 +81,8 @@ if(isset($page_config)){
     <ul>
       <li><a href="<?= $url_site; ?>">Home</a></li>
       <li><a href="<?= $url_site . '/sobre'; ?>">Sobre nós</a></li>
-      <li><a href="<?= $url_site . '/next'; ?>" target="_blank">Next (encontros)</a></li>
-      <li><a href="<?= $url_site . '/artigos'; ?>" target="_blank">Artigos  // Medium.com</a></li>
+      <li><a href="<?= $url_site . '/next'; ?>" target="_blank">Next [encontros]</a></li>
+      <li><a href="<?= $url_site . '/artigos'; ?>" target="_blank">Artigos  [Medium.com]</a></li>
       <li><a href="<?= $url_site . '/quiz'; ?>">Quiz</a></li>
       <li><a href="<?= $url_site . '#contato'; ?>">Contato</a></li>
 
