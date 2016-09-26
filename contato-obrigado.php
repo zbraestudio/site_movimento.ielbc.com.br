@@ -1,5 +1,8 @@
 <?
-$subpage = true;
+$page_config = array(
+  'subpage'   => true,
+  'title'     => 'Obrigado!'
+);
 include('incs/inc.header.php');
 ?>
   <!-- Main -->

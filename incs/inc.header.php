@@ -1,5 +1,25 @@
 <?
 include('variables.php');
+
+$config_default = array(
+  'title' =>        'LIVRES [Movimento Cristão]',
+  'subpage' =>      true,
+  'tags' =>         'movimento, cristão, Jesus, evangelho, Graça, escândalo da Graça',
+  'description' =>  'Uma Igreja pra quem não gosta de igreja e para pessoas de quem a igreja não gosta.'
+);
+
+if(isset($page_config)){
+
+  //completa titulo de subpágina
+  $page_config['title'] .= ' [LIVRES Movimento Cristão]';
+
+  $pg = array_merge($config_default, $page_config);
+} else {
+  $pg = $config_default;
+}
+
+//print_r($pg);
+
 ?>
 <!DOCTYPE HTML>
 <!--
@@ -9,17 +29,23 @@ include('variables.php');
 -->
 <html>
 <head>
-  <title>LIVRES // Movimento Cristão</title>
+  <title><?= $pg['title']; ?></title>
   <meta charset="utf-8" />
+
+  <!-- Parâmetros da Página -->
+  <link rel="icon" href="<?= $url_site; ?>/favicon.png">
+  <meta property="og:image" content="<?= $url_site; ?>/images/shared.jpg">
+  <meta name="keywords" content="<?= $pg['tags']; ?>">
+  <meta name="description" content="<?= $pg['description']; ?>">
+  <meta name="author" content="Z.BRA Estúdio (Balneário Camboriú, SC)">
+
+
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/less.css" />
   <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
   <!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
-
-  <link rel="icon" href="<?= $url_site; ?>/favicon.png">
-  <meta property="og:image" content="<?= $url_site; ?>/images/shared.jpg">
 
   <link rel="stylesheet" type="text/css" href="bower_components/tooltipster/dist/css/tooltipster.bundle.min.css" />
   <link rel="stylesheet" type="text/css" href="bower_components/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-punk.min.css" />
@@ -34,7 +60,7 @@ include('variables.php');
     <div class="inner">
 
       <!-- Logo -->
-      <a href="<?= $url_site; ?>" class="logo <?= (isset($subpage)?'subpage':null); ?>">
+      <a href="<?= $url_site; ?>" class="logo <?= (($pg['subpage'])?'subpage':null); ?>">
         <?= file_get_contents('./images/logo.svg');  ?>
       </a>
 

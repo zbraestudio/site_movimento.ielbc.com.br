@@ -1,5 +1,10 @@
 <?
-$subpage = true;
+$page_config = array(
+  'subpage'       => true,
+  'title'         => 'Quiz',
+  'tags'          => 'perguntas, dúvidas, bíblia, teologia, explicação',
+  'description'   => 'Sabe aquela dúvida que você sempre teve? Ou talvez ouviu uma mensagem, mas não ficou muito claro o assunto? Envie pra gente.'
+);
 include('incs/inc.header.php');
 ?>
 <!-- Main -->

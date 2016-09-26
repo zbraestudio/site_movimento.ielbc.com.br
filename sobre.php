@@ -1,5 +1,10 @@
 <?
-$subpage = true;
+$page_config = array(
+  'subpage'       => true,
+  'title'         => 'Quem Somos',
+  'tags'          => 'quem somos, sobre, saiba mais, quem é, about',
+  'description'   => 'Saiba tudo sobre a gente! Um lugar perfeito pra pessoas imperfeitas'
+);
 include('incs/inc.header.php');
 ?>
 <!-- Main -->

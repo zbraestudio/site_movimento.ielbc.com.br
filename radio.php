@@ -1,5 +1,8 @@
 <?
-$subpage = true;
+$page_config = array(
+  'subpage'   => true,
+  'title'     => 'Rádio'
+);
 include('incs/inc.header.php');
 ?>
   <!-- Main -->

@@ -1,4 +1,7 @@
 <?
+$page_config = array(
+	'subpage' =>  false
+);
 include('incs/inc.header.php');
 ?>
 

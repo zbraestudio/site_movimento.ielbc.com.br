@@ -1,6 +1,14 @@
 <?
-$subpage = true;
+$page_config = array(
+    'subpage'           => true,
+    'title'             => 'Série VINTAGE',
+    'tags'              =>  'encontros, ensino, estudo, bíblia, discipulado, mestre, Jesus',
+    'description'       =>  'Next são nossos encontros semanais, pra juntos crescermos mais a respeito de (e em) Jesus.'
+);
+
 include('incs/inc.header.php');
+
+
 ?>
     <!-- Main -->
     <div id="main" class="pg_next">
