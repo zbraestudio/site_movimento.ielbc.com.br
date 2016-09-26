@@ -11,7 +11,8 @@ $config_default = array(
 if(isset($page_config)){
 
   //completa titulo de subpágina
-  $page_config['title'] .= ' [LIVRES Movimento Cristão]';
+  if(isset($page_config['title']))
+    $page_config['title'] .= ' [LIVRES Movimento Cristão]';
 
   $pg = array_merge($config_default, $page_config);
 } else {
