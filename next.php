@@ -49,7 +49,7 @@ include('incs/inc.header.php');
 
             <h2>QUIZ</h2>
 
-            <p>Aproveite a faça perguntas no <a href="<?= $url_site; ?>quiz">nosso Quiz</a>.<br>As perguntas selecionadas serão respondidas durante os NEXT’s.</p>
+            <p>Aproveite a faça perguntas no <a href="<?= $url_site; ?>/quiz">nosso Quiz</a>.<br>As perguntas selecionadas serão respondidas durante os NEXT’s.</p>
 
         </div>
     </div>
