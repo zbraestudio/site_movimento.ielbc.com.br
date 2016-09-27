@@ -7,7 +7,7 @@ if( $_SERVER['HTTP_HOST'] == 'localhost') {
   $path_site = '/dados/http/livresweb.com/www/';
 }
 
-$midiasocial_facebook = 'http://facebook.com/igrejalivre';
+$midiasocial_facebook = 'http://facebook.com/livreschurch';
 $midiasocial_youtube = 'https://www.youtube.com/channel/UC-imHFpnCTsiiaJTAvd1OOg';
 
 
