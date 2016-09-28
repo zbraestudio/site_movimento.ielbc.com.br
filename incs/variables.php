@@ -11,7 +11,24 @@ $midiasocial_facebook = 'http://facebook.com/livreschurch';
 $midiasocial_youtube = 'https://www.youtube.com/channel/UC-imHFpnCTsiiaJTAvd1OOg';
 
 
-/* Envia E-mail */
+/* BANCO DE DADOS */
+/*
+ *
+ * @tihhgoncalves - inutilizado, por enquanto. Mas já está pronto!
+ *
+ *
+if( $_SERVER['HTTP_HOST'] == 'localhost')
+  $db_host =      'nbz.net.br';
+else
+  $db_host =      'localhost';
+$db_user =      'root';
+$db_pass =      'nwtiago';
+$db_database =  'livresweb.com_site';
+
+$db = new girafaGB($db_host, $db_database, $db_user, $db_pass);
+*/
+
+/* E-MAIL */
 include($path_site . 'bower_components/PHPMailer/PHPMailerAutoload.php');
 
 $mailer = new PHPMailer;

@@ -1,4 +1,5 @@
 <?
+include('girafa.db.php');
 include('variables.php');
 
 $config_default = array(
