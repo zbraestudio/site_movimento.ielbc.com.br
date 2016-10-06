@@ -363,7 +363,7 @@ nav#menu ul li.submarcas a svg:not(:hover) rect {
   color: #FFF;
   position: fixed;
   bottom: 0;
-  right: 0;
+  right: -349px;
 }
 #livres-news #news_logo {
   display: block;

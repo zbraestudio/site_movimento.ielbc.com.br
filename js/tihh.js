@@ -16,6 +16,15 @@ $(document).ready(function(){
       trigger: 'click'
     });
 
+
+    $('#livres-news').hover(function(){
+
+      $(this).animate({
+        right: 0
+      }, 500);
+
+    });
+
   });
 
 });
