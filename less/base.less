@@ -535,6 +535,12 @@ nav#menu{
       font-family: @fonte_titulos;
       font-size: 15px;
       padding: 3px 10px;
+
+      &:hover,
+      &:focus{
+        border-bottom-color: @cor_preto!important;
+        box-shadow: 0 0 0 -1px @cor_preto inset!important;
+      }
     }
 
     input.button{
@@ -542,7 +548,8 @@ nav#menu{
 
       font-family: @fonte_titulos;
       font-size: 15px;
-      color: @cor_preto;
+      color: @cor_preto!important;
+      box-shadow: 0 0 0 2px @cor_preto inset!important;
       letter-spacing: normal;
       font-weight: 600;
 

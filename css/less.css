@@ -402,10 +402,16 @@ nav#menu ul li.submarcas a svg:not(:hover) rect {
   font-size: 15px;
   padding: 3px 10px;
 }
+#livres-news #mc_embed_signup input[type=email]:hover,
+#livres-news #mc_embed_signup input[type=email]:focus {
+  border-bottom-color: #211915 !important;
+  box-shadow: 0 0 0 -1px #211915 inset !important;
+}
 #livres-news #mc_embed_signup input.button {
   font-family: "Source Sans Pro", Helvetica, sans-serif !important;
   font-size: 15px;
-  color: #211915;
+  color: #211915 !important;
+  box-shadow: 0 0 0 2px #211915 inset !important;
   letter-spacing: normal;
   font-weight: 600;
   padding: 0 10px;
