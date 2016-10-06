@@ -347,12 +347,81 @@ nav#menu ul li.submarcas a {
 }
 nav#menu ul li.submarcas a svg {
   float: left;
-  width: auto;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   margin: 15px 10px;
 }
 nav#menu ul li.submarcas a svg:not(:hover) path,
 nav#menu ul li.submarcas a svg:not(:hover) polygon,
 nav#menu ul li.submarcas a svg:not(:hover) rect {
   fill: #FFF;
+}
+#livres-news {
+  height: 50px;
+  width: 440px;
+  background-color: #eed163;
+  color: #FFF;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+#livres-news #news_logo {
+  display: block;
+  float: left;
+}
+#livres-news #news_logo svg {
+  width: auto;
+  height: 45px;
+  margin: 5px;
+  display: block;
+}
+#livres-news #news_logo svg path,
+#livres-news #news_logo svg polygon,
+#livres-news #news_logo svg rect {
+  fill: #211915;
+}
+#livres-news #mc_embed_signup {
+  float: right;
+  width: 344px!important;
+  display: block;
+  background: none;
+}
+#livres-news #mc_embed_signup form {
+  margin: 0;
+  padding: 0;
+}
+#livres-news #mc_embed_signup input[type=email] {
+  background-color: #FFF;
+  width: 200px;
+  color: #211915;
+  line-height: 24px;
+  height: 30px;
+  float: left;
+  margin: 12px 6px;
+  font-family: "Source Sans Pro", Helvetica, sans-serif !important;
+  font-size: 15px;
+  padding: 3px 10px;
+}
+#livres-news #mc_embed_signup input.button {
+  font-family: "Source Sans Pro", Helvetica, sans-serif !important;
+  font-size: 15px;
+  color: #211915;
+  letter-spacing: normal;
+  font-weight: 600;
+  padding: 0 10px;
+  margin: 10px 6px;
+  height: 30px;
+  line-height: 30px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+#livres-news #mc_embed_signup input.button:hover {
+  background-color: #211915 !important;
+  color: #eed163 !important;
+  border-color: #211915 !important;
+  box-shadow: 0 0 0 2px #211915 inset !important;
 }

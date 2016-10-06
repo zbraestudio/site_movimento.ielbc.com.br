@@ -55,6 +55,11 @@ $tooltip_quiz .= ' As perguntas selecionadas são respondidas nos nossos program
 
 </div>
 
+<div id="livres-news">
+  <? include('mailchimp.form.php'); ?>
+  <div id="news_logo"> <?= file_get_contents('./images/logo_news.svg');  ?></div>
+</div>
+
 <!-- Scripts -->
 <script src="js/jquery.min.js"></script>
 <script src="js/skel.min.js"></script>

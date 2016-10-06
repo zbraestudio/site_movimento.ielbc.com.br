@@ -478,3 +478,91 @@ nav#menu{
   }
 
 }
+
+
+
+#livres-news{
+
+  height: 50px;
+  width: 440px;
+  background-color: @cor_amarelo;
+  color: #FFF;
+
+  position: fixed;
+  bottom: 0;
+  right: 0;
+
+  #news_logo{
+
+    display: block;
+    float: left;
+
+
+    svg {
+      width: auto;
+      height: 45px;
+      margin: 5px;
+      display: block;
+
+      path, polygon, rect{
+        fill: @cor_preto;
+      }
+
+    }
+  }
+
+  #mc_embed_signup{
+
+    float: right;
+    width: 344px!important;
+    display: block;
+    background: none;
+
+    form{
+      margin: 0;
+      padding: 0;
+    }
+
+    input[type=email]{
+      background-color:  #FFF;
+      width: 200px;
+      color: @cor_preto;
+      line-height: 24px;
+      height: 30px;
+      float: left;
+      margin: 12px 6px;
+
+      font-family: @fonte_titulos;
+      font-size: 15px;
+      padding: 3px 10px;
+    }
+
+    input.button{
+
+
+      font-family: @fonte_titulos;
+      font-size: 15px;
+      color: @cor_preto;
+      letter-spacing: normal;
+      font-weight: 600;
+
+      padding: 0 10px;
+      margin: 10px 6px;
+
+      height: 30px;
+      line-height: 30px;
+
+      .border-radius(0);
+
+      &:hover{
+        background-color: @cor_preto!important;
+        color: @cor_amarelo!important;
+        border-color: @cor_preto!important;
+        box-shadow: 0 0 0 2px @cor_preto inset!important;
+      }
+    }
+
+  }
+
+
+}
