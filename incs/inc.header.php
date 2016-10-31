@@ -1,0 +1,107 @@
+<?
+include('girafa.db.php');
+include('variables.php');
+
+$config_default = array(
+  'title' =>        'LIVRES [Movimento Cristão]',
+  'subpage' =>      true,
+  'tags' =>         'movimento, cristão, Jesus, evangelho, Graça, escândalo da Graça',
+  'description' =>  'Uma Igreja pra quem não gosta de igreja e para pessoas de quem a igreja não gosta.'
+);
+
+if(isset($page_config)){
+
+  //completa titulo de subpágina
+  if(isset($page_config['title']))
+    $page_config['title'] .= ' [LIVRES Movimento Cristão]';
+
+  $pg = array_merge($config_default, $page_config);
+} else {
+  $pg = $config_default;
+}
+
+//print_r($pg);
+
+?>
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+  <title><?= $pg['title']; ?></title>
+  <meta charset="utf-8" />
+
+  <!-- Parâmetros da Página -->
+  <link rel="icon" href="<?= $url_site; ?>/favicon.png">
+  <meta property="og:image" content="<?= $url_site; ?>/images/shared.jpg">
+  <meta name="keywords" content="<?= $pg['tags']; ?>">
+  <meta name="description" content="<?= $pg['description']; ?>">
+  <meta name="author" content="Z.BRA Estúdio (Balneário Camboriú, SC)">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/less.css" />
+  <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+  <!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+
+  <link rel="stylesheet" type="text/css" href="bower_components/tooltipster/dist/css/tooltipster.bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="bower_components/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-punk.min.css" />
+
+<!-- Rastreamento smartlook.com -->
+<script type="text/javascript">
+    window.smartlook||(function(d) {
+    var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+    var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+    c.charset='utf-8';c.src='//rec.smartlook.com/recorder.js';h.appendChild(c);
+    })(document);
+    smartlook('init', '0558bde921436c295be10f04b66749032cd546b9');
+</script>
+
+
+</head>
+<body>
+<!-- Wrapper -->
+<div id="wrapper">
+
+  <!-- Header -->
+  <header id="header">
+    <div class="inner">
+
+      <!-- Logo -->
+      <a href="<?= $url_site; ?>" class="logo <?= (($pg['subpage'])?'subpage':null); ?>">
+        <?= file_get_contents('./images/logo.svg');  ?>
+      </a>
+
+      <!-- Nav -->
+      <nav>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- Menu -->
+  <nav id="menu">
+    <h2>Menu</h2>
+    <ul>
+      <li><a href="<?= $url_site; ?>">Home</a></li>
+      <li><a href="<?= $url_site . '/sobre'; ?>">Sobre nós</a></li>
+      <li><a href="<?= $url_site . '/next'; ?>" target="_blank">Next [encontros]</a></li>
+      <li><a href="<?= $url_site . '/artigos'; ?>" target="_blank">Artigos  [Medium.com]</a></li>
+      <li><a href="<?= $url_site . '/quiz'; ?>">Quiz</a></li>
+      <li><a href="<?= $url_site . '#contato'; ?>">Contato</a></li>
+
+      <li class="submarcas">
+        <? /* ?><a href="<?= $url_site . '/radio'; ?>"><?= file_get_contents('./images/logo_radio.svg');  ?></a><? */ ?>
+        <a href="https://www.youtube.com/channel/UC-imHFpnCTsiiaJTAvd1OOg" target="_blank"><?= file_get_contents('./images/logo_tv.svg');  ?></a>
+      </li>
+
+    </ul>
+  </nav>

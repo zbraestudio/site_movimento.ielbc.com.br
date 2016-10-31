@@ -1,0 +1,18 @@
+{
+  "name": "site_movimento.ielbc.com.br",
+  "homepage": "https://github.com/zbraestudio/site_movimento.ielbc.com.br",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "PHPMailer": "https://github.com/PHPMailer/PHPMailer.git#^5.2.16",
+    "tooltipster": "^4.1.2"
+  }
+}
