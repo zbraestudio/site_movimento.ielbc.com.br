@@ -1,5 +1,5 @@
 /*
-	Twenty by HTML5 UP
+	Alpha by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
@@ -11,7 +11,8 @@
 		normal: '(max-width: 1280px)',
 		narrow: '(max-width: 980px)',
 		narrower: '(max-width: 840px)',
-		mobile: '(max-width: 736px)'
+		mobile: '(max-width: 736px)',
+		mobilep: '(max-width: 480px)'
 	});
 
 	$(function() {
@@ -20,17 +21,6 @@
 			$body = $('body'),
 			$header = $('#header'),
 			$banner = $('#banner');
-
-		// Disable animations/transitions until the page has loaded.
-			$body.addClass('is-loading');
-
-			$window.on('load', function() {
-				$body.removeClass('is-loading');
-			});
-
-		// CSS polyfills (IE<9).
-			if (skel.vars.IEVersion < 9)
-				$(':last-child').addClass('last-child');
 
 		// Fix: Placeholder polyfill.
 			$('form').placeholder();
@@ -43,17 +33,9 @@
 				);
 			});
 
-		// Scrolly links.
-			$('.scrolly').scrolly({
-				speed: 1000,
-				offset: -10
-			});
-
 		// Dropdowns.
 			$('#nav > ul').dropotron({
-				mode: 'fade',
-				noOpenerFade: true,
-				expandMode: (skel.vars.touch ? 'click' : 'hover')
+				alignment: 'right'
 			});
 
 		// Off-Canvas Navigation.
@@ -103,7 +85,7 @@
 
 					$banner.scrollwatch({
 						delay:		0,
-						range:		1,
+						range:		0.5,
 						anchor:		'top',
 						on:			function() { $header.addClass('alt reveal'); },
 						off:		function() { $header.removeClass('alt'); }
