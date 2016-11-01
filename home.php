@@ -9,6 +9,8 @@ include('incs/inc.header.php');
 <!-- Main -->
 <section id="main" class="container">
 
+  <a name="saiba-mais" id="saiba-mais" style="position: absolute;margin-top: -100px;"></a>
+
   <section class="box special">
     <header class="major">
       <h2>Um lugar perfeito pra pessoas imperfeitas. <br>Gente feito gente, como a gente.</h2>

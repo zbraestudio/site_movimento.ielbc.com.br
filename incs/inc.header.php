@@ -84,7 +84,7 @@ if(!get_config('robots_index')) {
     <p>Uma Igreja pra quem não gosta de igreja e para pessoas de quem a igreja não gosta.</p>
     <ul class="actions">
       <li><a href="<?= get_config('site_url')?>participe" class="button">Participe!</a></li>
-      <li><a href="#" class="button special">Saiba mais</a></li>
+      <li><a href="<?= get_config('site_url')?>#saiba-mais" onclick="scrollToAnchor('saiba-mais');return false;" class="button special scroll">Saiba mais</a></li>
     </ul>
   </section>
   <?
