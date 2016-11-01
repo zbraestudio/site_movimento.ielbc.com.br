@@ -12,6 +12,9 @@
   box-shadow: none !important;
   line-height: 50px;
   height: 50px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 .button:hover,
 .button:focus {
@@ -27,6 +30,9 @@ input[type="button"] {
   box-shadow: none !important;
   line-height: 50px;
   height: 50px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 input[type="submit"]:hover,
 input[type="reset"]:hover,
@@ -119,6 +125,14 @@ section#cta form input[type="submit"]:focus {
 }
 #page-wrapper > header nav ul li a {
   color: #ffffff;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+#page-wrapper > header nav ul li a.active {
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25) !important;
+  padding-bottom: 10px;
 }
 #page-wrapper > header nav ul li a:hover,
 #page-wrapper > header nav ul li a:focus {
@@ -129,6 +143,9 @@ section#cta form input[type="submit"]:focus {
   border: 0;
   box-shadow: none!important;
   line-height: 31px;
+}
+#page-wrapper > header nav ul li a.button.active {
+  border-bottom: 1px solid rgba(244, 220, 97, 0.25) !important;
 }
 #page-wrapper > header nav ul li a.button:hover,
 #page-wrapper > header nav ul li a.button:focus {
@@ -171,6 +188,9 @@ section#banner .button {
   box-shadow: none !important;
   line-height: 50px;
   height: 50px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 section#banner .button:hover,
 section#banner .button:focus {

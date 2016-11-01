@@ -53,6 +53,10 @@ function set_page_noindex(){
 }
 
 
+$urls = $_SERVER["REQUEST_URI"];
+$urls = explode('/', $urls);
+set_config('page', @array_pop($urls));
+
 
 
 ?>

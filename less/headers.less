@@ -38,6 +38,13 @@
         a{
 
           color: @cor-branco;
+          .border-radius(0);
+
+          &.active{
+            text-decoration:none;
+            border-bottom:1px solid fade(@cor-branco, 25%)!important;
+            padding-bottom:10px;
+          }
 
           &:hover,
           &:focus{
@@ -52,6 +59,10 @@
             border: 0;
             box-shadow: none!important;
             line-height: 31px;
+
+            &.active{
+              border-bottom:1px solid fade(@cor-amarelo, 25%)!important;
+            }
 
             &:hover,
             &:focus{

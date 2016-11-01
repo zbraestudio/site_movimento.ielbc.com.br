@@ -50,10 +50,10 @@ if(!get_config('robots_index')) {
     </a>
     <nav id="nav">
       <ul>
-        <li><a href="<?= get_config('site_url')?>home">Home</a></li>
-        <li><a class="button" href="<?= get_config('site_url')?>participe">Quero participar!</a></li>
-        <li><a href="<?= get_config('site_url')?>contato">Contato</a></li>
-        <!--<li>
+        <li><a <?= get_config('page') == 'home'?'class="active" ':null; ?> href="<?= get_config('site_url')?>home">Home</a></li>
+        <li><a class="button <?= get_config('page') == 'participe'?'active':null; ?>" href="<?= get_config('site_url')?>participe">Quero participar!</a></li>
+        <li><a  <?= get_config('page') == 'contato'?'class="active" ':null; ?>href="<?= get_config('site_url')?>contato">Contato</a></li>
+       <!--<li>
           <a href="#" class="icon fa-angle-down">Layouts</a>
           <ul>
             <li><a href="generic.html">Generic</a></li>
