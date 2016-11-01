@@ -1,10 +1,12 @@
 <?
 session_start();
 include('./incs/config.php');
+include('./mails/participe.php');
 
-$_SESSION['msg'] = array(
-                        'title' => 'Eba! Já recebemos seus dados.',
-                        'msg' => 'Que bacana que quer participar com a gente nessa caminhada louca pelo Caminho da Graça. <br>Em breve estaremos entrando em contato com você.<br>Abraços e tâmo junto!!'
-);
-header('LOCATION: ' . get_config('site_url') . 'msg');
+$nome =       $_POST['nome'];
+$email =      $_POST['email'];
+$telefone =   $_POST['telefone'];
+$cidade =     $_POST['cidade'];
+
+mail_participe_send($nome, $email, $telefone, $cidade);
 ?>

@@ -1,10 +1,12 @@
 <?
 session_start();
 include('./incs/config.php');
+include('./mails/contato.php');
 
-$_SESSION['msg'] = array(
-                        'title' => 'Opa! Sua mensagem foi enviada com sucesso.',
-                        'msg' => 'Agradecemos ter entrado em contato com a gente. Assim que possível, estaremos respondendo sua mensagem. <br>Tâmo junto! Abraços!'
-);
-header('LOCATION: ' . get_config('site_url') . 'msg');
+$nome =       $_POST['nome'];
+$email =      $_POST['email'];
+$assunto =    $_POST['assunto'];
+$msg =        $_POST['msg'];
+
+mail_contato_send($nome, $email, $assunto, $msg);
 ?>

@@ -18,26 +18,26 @@ include('incs/inc.header.php');
     <form method="post" action="<?= get_config('site_url'); ?>script.contato.php">
       <div class="row uniform 50%">
         <div class="6u 12u(mobilep)">
-          <input type="text" name="nome" id="name" value="" placeholder="Seu nome" required="" />
+          <input type="text" name="nome" value="" placeholder="Seu nome" required="" />
         </div>
         <div class="6u 12u(mobilep)">
-          <input type="email" name="email" id="email" value="" placeholder="Seu e-mail"  required="" />
+          <input type="email" name="email" value="" placeholder="Seu e-mail"  required="" />
         </div>
       </div>
       <div class="row uniform 50%">
         <div class="12u">
-          <input type="text" name="assunto" id="subject" value="" placeholder="Assunto da sua mensagem"  required="" />
+          <input type="text" name="assunto" value="" placeholder="Assunto da sua mensagem"  required="" />
         </div>
       </div>
       <div class="row uniform 50%">
         <div class="12u">
-          <textarea name="message" id="mensagem" placeholder="Sua mensagem" rows="6"  required=""></textarea>
+          <textarea name="msg" placeholder="Sua mensagem" rows="6"  required=""></textarea>
         </div>
       </div>
       <div class="row uniform">
         <div class="12u">
           <ul class="actions align-center">
-            <li><input type="submit" value="Send Message" /></li>
+            <li><input type="submit" value="Enviar mensagem" /></li>
           </ul>
         </div>
       </div>

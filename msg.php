@@ -13,8 +13,6 @@ if(isset($_SESSION['msg'])){
   header('LOCATION: ' . get_config('site_url') . 'home');
 }
 
-
-set_page_title('Contato');
 set_page_noindex();
 
 include('incs/inc.header.php');

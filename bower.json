@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "font-awesome": "^4.7.0",
-    "jQuery.dotdotdot": "^1.8.3"
+    "jQuery.dotdotdot": "^1.8.3",
+    "PHPMailer": "https://github.com/PHPMailer/PHPMailer.git#^5.2.16"
   }
 }
