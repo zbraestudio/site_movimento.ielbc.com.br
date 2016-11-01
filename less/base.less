@@ -85,6 +85,7 @@ section#cta{
 
   form{
     width: 800px;
+    max-width: 90%;
 
     input[type="submit"],{
 
@@ -100,4 +101,25 @@ section#cta{
 
 }
 
+
+
+#navButton{
+
+  .toggle{
+
+
+    &::before{
+      background-color: @cor-preto;
+    }
+
+
+    &:hover{
+      &::before{
+        background-color: @cor-amarelo;
+        color: @cor-preto;
+      }
+    }
+  }
+
+}
 

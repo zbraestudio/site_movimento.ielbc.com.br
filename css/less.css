@@ -84,11 +84,19 @@ section#cta p {
 }
 section#cta form {
   width: 800px;
+  max-width: 90%;
 }
 section#cta form input[type="submit"]:hover,
 section#cta form input[type="submit"]:focus {
   background: rgba(255, 255, 255, 0.15) none repeat scroll 0 0;
   color: #ffffff !important;
+}
+#navButton .toggle::before {
+  background-color: #201815;
+}
+#navButton .toggle:hover::before {
+  background-color: #f4dc61;
+  color: #201815;
 }
 /* CSS do Template */
 /* @import 'template/font-awesome.min.css'; @tihhgoncalves desativei pra usar a partir do BOWER */
@@ -126,6 +134,17 @@ section#cta form input[type="submit"]:focus {
 #page-wrapper > header nav ul li a.button:focus {
   background-color: #f4dc61 !important;
   color: #201815 !important;
+}
+@media screen and (max-width: 840px) {
+  #page-wrapper > header {
+    display: block !important;
+  }
+  #page-wrapper > header svg {
+    max-width: 80%;
+  }
+  #page-wrapper > header #nav {
+    display: none;
+  }
 }
 section#banner {
   padding: 300px 50px;
