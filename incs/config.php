@@ -1,6 +1,16 @@
 <?
-set_config('site_path',           'D:\github\site_www.livresweb.com\\');
-set_config('site_url',            'http://localhost/github/site_www.livresweb.com/');
+
+if( $_SERVER['HTTP_HOST'] == 'localhost'){
+
+  set_config('site_path',           'D:\github\site_www.livresweb.com\\');
+  set_config('site_url',            'http://localhost/github/site_www.livresweb.com/');
+
+} else {
+
+  set_config('site_path',           'D:/github/site_sistema.livresweb.com/uploads/');
+  set_config('site_url',            'http://sistema.livresweb.com/uploads/');
+
+}
 
 set_config('meta_title',          'LIVRES');
 set_config('meta_description',    'Uma Igreja pra quem não gosta de igreja e para pessoas de quem a igreja não gosta.');
