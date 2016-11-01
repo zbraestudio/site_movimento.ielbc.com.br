@@ -13,7 +13,7 @@ include('incs/inc.header.php');
     <p>É proibida a participação de pessoas perfeitas. Então se você é como a gente, será muito bem vindo.</p>
   </header>
   <div class="box">
-    <span class="image featured"><img src="images/pic01.jpg" alt="" /></span>
+    <span class="image featured"><img src="images/grupo.jpg" alt="" /></span>
     <h3>Estações</h3>
     <p>Entendemos que vida com Deus é tudo o que temos e principalmente somos, então não precisamos ir a lugares nem mesmo fazer coisas. A bíblia nos conta que Jesus é o único caminho que nos leva a Deus. E é nesse caminho que estamos: o Caminho da Graça. E como em toda caminhada, a gente precisa fazer paradas pra descansar os pés. É onda nasce a nossa Estação, um lugar para descansar, fazer amigos e compartilhar nossas vidas.</p>
     <p>Cremos que uma Estação não é promovida, mas nasce no coração das pessoas que desejam caminhar juntas, aprendendo mais a respeito de Deus e ajudando umas as outras. Ninguém é obrigado ir a uma Estação, mas ela é feita de pessoas que decidiram fazer parte dela.</p>
