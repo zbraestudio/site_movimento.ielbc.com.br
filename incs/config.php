@@ -7,8 +7,8 @@ if( $_SERVER['HTTP_HOST'] == 'localhost'){
 
 } else {
 
-  set_config('site_path',           'D:/github/site_sistema.livresweb.com/uploads/');
-  set_config('site_url',            'http://sistema.livresweb.com/uploads/');
+  set_config('site_path',           'D:/github/site_www.livresweb.com/');
+  set_config('site_url',            'http://www.livresweb.com/');
 
 }
 
