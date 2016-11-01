@@ -1,0 +1,21 @@
+{
+  "name": "site_www.livresweb.com",
+  "homepage": "https://github.com/zbraestudio/site_www.livresweb.com",
+  "authors": [
+    "Tihh Gonçalves <tihh.gon@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "jQuery.dotdotdot": "^1.8.3"
+  }
+}

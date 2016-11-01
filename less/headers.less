@@ -1,0 +1,64 @@
+#page-wrapper > header{
+
+  #logo{
+    display: block;
+    margin: 50px auto;
+
+    width: 200px;
+    height: auto;
+
+    path {
+      fill: @cor-amarelo;
+    }
+
+
+
+  }
+
+  &:not(.alt){
+
+    background-color: @cor-preto!important;
+
+    #logo {
+
+      width: 50px;
+      margin-top: 3px;
+
+    }
+
+  }
+
+}
+
+
+section#banner{
+
+  padding: 300px 50px;
+
+  background-image: url(../images/banner.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+
+  p{
+    font-family: @fonte-principal;
+    font-size: 35px;
+    padding-bottom: 50px;
+    line-height: 55px;
+    max-width: 800px;
+    margin: auto;
+    display: block;
+
+    color: @cor-branco;
+  }
+
+  .button{
+    background-color: @cor-amarelo;
+    color: @cor-preto;
+    border: 0;
+  }
+
+}
+
