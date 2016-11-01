@@ -56,6 +56,24 @@ section#cta form {
   width: 50px;
   margin-top: 3px;
 }
+#page-wrapper > header nav ul li a {
+  color: #ffffff;
+}
+#page-wrapper > header nav ul li a:hover,
+#page-wrapper > header nav ul li a:focus {
+  color: #f4dc61;
+}
+#page-wrapper > header nav ul li a.button {
+  color: #f4dc61;
+  border: 0;
+  box-shadow: none!important;
+  line-height: 31px;
+}
+#page-wrapper > header nav ul li a.button:hover,
+#page-wrapper > header nav ul li a.button:focus {
+  background-color: #f4dc61 !important;
+  color: #201815;
+}
 section#banner {
   padding: 300px 50px;
   background-image: url(../images/banner.jpg);

@@ -32,8 +32,10 @@ include('./incs/config.php');
     </a>
     <nav id="nav">
       <ul>
-        <li><a href="index.php">Home</a></li>
-        <li>
+        <li><a href="<?= get_config('site_url')?>/home">Home</a></li>
+        <li><a class="button" href="<?= get_config('site_url')?>/contato">Quero participar!</a></li>
+        <li><a href="<?= get_config('site_url')?>/contato">Contato</a></li>
+        <!--<li>
           <a href="#" class="icon fa-angle-down">Layouts</a>
           <ul>
             <li><a href="generic.html">Generic</a></li>
@@ -50,7 +52,7 @@ include('./incs/config.php');
             </li>
           </ul>
         </li>
-        <li><a href="#" class="button">Sign Up</a></li>
+        <li><a href="#" class="button">Sign Up</a></li>-->
       </ul>
     </nav>
   </header>
