@@ -15,7 +15,7 @@ include('incs/inc.header.php');
 
       <p>Nossa missão consiste em abraçar o ser humano do jeito que ele é, <br>para um dia ser como Deus sonhou. </p>
     </header>
-    <span class="image featured"><img src="images/pic01.jpg" alt="" /></span>
+   <!-- <span class="image featured"><img src="images/pic01.jpg" alt="" /></span>-->
   </section>
 
   <section class="box special features">
@@ -47,35 +47,9 @@ include('incs/inc.header.php');
 
 
 </section>
-
-<!-- CTA -->
-<section id="cta">
-
-  <h2>Quer fazer parte disso?</h2>
-  <p>O que é mais legal é que a gente só não gosta de pessoas perfeitas. Então se você é imperfeito como a gente, será muito bem vindo.</p>
-  <p>Digite abaixo seus dados e a gente vai atrás de você.</p>
-
-  <form>
-    <div class="row uniform 50%">
-      <div class="12u 12u(mobilep)">
-        <input type="email" name="email" id="email" required="" placeholder="Seu nome" />
-      </div>
-      <div class="6u 12u(mobilep)">
-        <input type="email" name="email" id="email" required="" placeholder="Seu e-mail" />
-      </div>
-      <div class="6u 12u(mobilep)">
-        <input type="email" name="email" id="email" required="" placeholder="Seu telefone (whats, telegram, etc)" />
-      </div>
-      <div class="6u 12u(mobilep)">
-        <input type="email" name="email" id="email" required="" placeholder="Cidade / Estado" />
-      </div>
-      <div class="6u 12u(mobilep)">
-        <input type="submit" value="Enviar" class="fit" />
-      </div>
-    </div>
-  </form>
-
-</section>
+<?
+include('incs/inc.participe.php');
+?>
 <?
 include('incs/inc.footer.php');
 ?>

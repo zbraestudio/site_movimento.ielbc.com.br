@@ -2,8 +2,44 @@
   clear: both;
 }
 
+.button {
+  background-color: @cor-amarelo;
+  color: @cor-preto;
+  border: 0;
+  box-shadow: none !important;
+  line-height: 50px;
+  height: 50px;
 
+  &:hover,
+  &:focus {
+    background-color: @cor-preto;
+    color: @cor-amarelo !important;
+  }
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"]{
+  .button()
+}
 
+body{
+  color: @cor-preto;
+}
+p{
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 20px;
+
+  b,
+  strong{
+    font-weight: 600;
+  }
+}
+
+h3{
+  font-weight: 400;
+  font-family: @fonte-principal;
+}
 section#main{
 
 
@@ -49,6 +85,19 @@ section#cta{
 
   form{
     width: 800px;
+
+    input[type="submit"],{
+
+      &:hover,
+      &:focus{
+        background: rgba(255, 255, 255, 0.15) none repeat scroll 0 0;
+        color: @cor-branco!important;
+      }
+
+    }
+
   }
 
 }
+
+

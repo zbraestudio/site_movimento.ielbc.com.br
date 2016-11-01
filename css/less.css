@@ -1,9 +1,57 @@
 /* Variáveis */
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i');
 /* Cores */
 @import 'template/main.css';
 .clearboth {
   clear: both;
+}
+.button {
+  background-color: #f4dc61;
+  color: #201815;
+  border: 0;
+  box-shadow: none !important;
+  line-height: 50px;
+  height: 50px;
+}
+.button:hover,
+.button:focus {
+  background-color: #201815;
+  color: #f4dc61 !important;
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  background-color: #f4dc61;
+  color: #201815;
+  border: 0;
+  box-shadow: none !important;
+  line-height: 50px;
+  height: 50px;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  background-color: #201815;
+  color: #f4dc61 !important;
+}
+body {
+  color: #201815;
+}
+p {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+p b,
+p strong {
+  font-weight: 600;
+}
+h3 {
+  font-weight: 400;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 section#main .icon.major.accent1 {
   background: #cb666b;
@@ -36,6 +84,11 @@ section#cta p {
 }
 section#cta form {
   width: 800px;
+}
+section#cta form input[type="submit"]:hover,
+section#cta form input[type="submit"]:focus {
+  background: rgba(255, 255, 255, 0.15) none repeat scroll 0 0;
+  color: #ffffff !important;
 }
 /* CSS do Template */
 /* @import 'template/font-awesome.min.css'; @tihhgoncalves desativei pra usar a partir do BOWER */
@@ -72,7 +125,7 @@ section#cta form {
 #page-wrapper > header nav ul li a.button:hover,
 #page-wrapper > header nav ul li a.button:focus {
   background-color: #f4dc61 !important;
-  color: #201815;
+  color: #201815 !important;
 }
 section#banner {
   padding: 300px 50px;
@@ -96,4 +149,28 @@ section#banner .button {
   background-color: #f4dc61;
   color: #201815;
   border: 0;
+  box-shadow: none !important;
+  line-height: 50px;
+  height: 50px;
+}
+section#banner .button:hover,
+section#banner .button:focus {
+  background-color: #201815;
+  color: #f4dc61 !important;
+}
+.pg_contato input[type="text"],
+.pg_contato input[type="password"],
+.pg_contato input[type="email"],
+.pg_contato select,
+.pg_contato textarea {
+  box-shadow: none !important;
+  border: 1px solid transparent !important;
+}
+.pg_contato input[type="text"]:focus,
+.pg_contato input[type="password"]:focus,
+.pg_contato input[type="email"]:focus,
+.pg_contato select:focus,
+.pg_contato textarea:focus {
+  box-shadow: none !important;
+  border: 1px solid #f4dc61 !important;
 }

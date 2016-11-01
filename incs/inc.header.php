@@ -8,8 +8,27 @@ global $isHome;
 -->
 <html>
 <head>
-  <title><?= get_config('site_title'); ?></title>
+  <title><?= get_config('meta_title'); ?></title>
   <meta charset="utf-8" />
+
+  <!-- Parâmetros da Página -->
+  <link rel="icon" href="http://www.livresweb.com/favicon.png">
+  <meta property="og:image" content="http://www.livresweb.com/images/shared.jpg">
+  <meta name="keywords" content="<?= get_config('meta_tags'); ?>">
+  <meta name="description" content="<?= get_config('meta_description'); ?>">
+  <meta name="author" content="Z.BRA Estúdio (Balneário Camboriú, SC)">
+
+<?
+if(!get_config('robots_index')) {
+?>
+    <!-- Não indexa em buscadores -->
+    <meta name="googlebot" content="noindex">
+    <meta name="robots" content="noindex">
+<?
+}
+?>
+
+
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!--[if lte IE 8]><script src="<?= get_config('site_url'); ?>js/ie/html5shiv.js"></script><![endif]-->
 
@@ -64,7 +83,7 @@ global $isHome;
     <!--<h2>Alpha</h2>-->
     <p>Uma Igreja pra quem não gosta de igreja e para pessoas de quem a igreja não gosta.</p>
     <ul class="actions">
-      <li><a href="#" class="button">Participe!</a></li>
+      <li><a href="<?= get_config('site_url')?>participe" class="button">Participe!</a></li>
       <li><a href="#" class="button special">Saiba mais</a></li>
     </ul>
   </section>
