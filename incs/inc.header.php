@@ -1,7 +1,6 @@
 <?
-include('./incs/config.php');
-?>
-<!DOCTYPE HTML>
+global $isHome;
+?><!DOCTYPE HTML>
 <!--
 	Alpha by HTML5 UP
 	html5up.net | @ajlkn
@@ -20,11 +19,11 @@ include('./incs/config.php');
   <link rel="stylesheet" href="<?= get_config('site_url'); ?>css/less.css" />
   <!--[if lte IE 8]><link rel="stylesheet" href="<?= get_config('site_url'); ?>css/template/ie8.css" /><![endif]-->
 </head>
-<body class="landing">
+<body <?= ($isHome)?'class="landing"':null; ?>>
 <div id="page-wrapper">
 
   <!-- Header -->
-  <header id="header" class="alt">
+  <header id="header" <?= ($isHome)?'class="alt"':null; ?>>
     <a href="index.php">
       <?/* file_get_contents(get_config('site_path') . 'images/logos/livres.svg');*/ ?>
       <img src="<?= get_config('site_url') . 'images/logos/livres.svg';  ?>" class="svg" id="logo">
@@ -32,9 +31,9 @@ include('./incs/config.php');
     </a>
     <nav id="nav">
       <ul>
-        <li><a href="<?= get_config('site_url')?>/home">Home</a></li>
-        <li><a class="button" href="<?= get_config('site_url')?>/contato">Quero participar!</a></li>
-        <li><a href="<?= get_config('site_url')?>/contato">Contato</a></li>
+        <li><a href="<?= get_config('site_url')?>home">Home</a></li>
+        <li><a class="button" href="<?= get_config('site_url')?>participe">Quero participar!</a></li>
+        <li><a href="<?= get_config('site_url')?>contato">Contato</a></li>
         <!--<li>
           <a href="#" class="icon fa-angle-down">Layouts</a>
           <ul>
@@ -57,6 +56,9 @@ include('./incs/config.php');
     </nav>
   </header>
 
+  <?
+  if($isHome){
+  ?>
   <!-- Banner -->
   <section id="banner">
     <!--<h2>Alpha</h2>-->
@@ -66,3 +68,6 @@ include('./incs/config.php');
       <li><a href="#" class="button special">Saiba mais</a></li>
     </ul>
   </section>
+  <?
+  }
+  ?>
