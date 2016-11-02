@@ -1,4 +1,5 @@
 <?
+
 require_once(get_config('site_path') . 'bower_components/PHPMailer/PHPMailerAutoload.php');
 
 $mailer = new PHPMailer;
