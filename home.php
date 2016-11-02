@@ -42,7 +42,7 @@ include('incs/inc.header.php');
       <section>
         <span class="icon major fa-handshake-o accent4"></span>
         <h3>Social</h3>
-        <p>Entendemos que nosso comprometimento como igreja não é ser grande, rica ou politicamente influente, mas capacitar homens e mulheres  em todos os campos de ação humana: em casa, na empresa, no hospital, na universidade, na oficina, em fim, em todo lugar, manifestando o amor e sua justiça de Jesus, tanto no âmbito pessoal como no âmbito comunitário.</p>
+        <p>Entendemos que nosso comprometimento como igreja não é ser grande, rica ou politicamente influente, mas capacitar homens e mulheres  em todos os campos de ação humana: em casa, na empresa, no hospital, na universidade, na oficina, enfim, em todo lugar. Manifestando o amor de Jesus e sua justiça, tanto no âmbito pessoal como no âmbito comunitário.</p>
       </section>
     </div>
   </section>
