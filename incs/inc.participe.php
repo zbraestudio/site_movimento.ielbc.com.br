@@ -3,6 +3,7 @@
 <section id="cta">
 
   <h2>Quer fazer parte disso?</h2>
+
   <p>O que é mais legal é que a gente só não gosta de pessoas perfeitas. Então se você é imperfeito como a gente, será muito bem vindo.</p>
   <p>Digite abaixo seus dados e a gente vai atrás de você.</p>
 
