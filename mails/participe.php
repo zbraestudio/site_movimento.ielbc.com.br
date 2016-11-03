@@ -1,4 +1,5 @@
 <?
+
 require_once(get_config('site_path') . 'incs/mails.php');
 
 function mail_participe_getHtml($nome, $email, $telefone, $cidade){
