@@ -22,28 +22,34 @@ include('incs/inc.header.php');
 
   <section class="box special features">
     <div class="features-row">
-      <section>
-        <span class="icon major fa-users accent1"></span>
-        <h3>Relacionamentos</h3>
-        <p>É aí que nasce a Livres. Da ideia que estamos todos juntos, precisamos uns dos outros e que não somos melhores do que ninguém.</p>
-      </section>
+
       <section>
         <span class="icon major fa-battery-full accent2"></span>
         <h3>Integralidade</h3>
-        <p>A vida com Deus é uma consciência. Não tem nada a ver com o que devemos fazer, mas compreendemos algo que Cristo fez por nós e isso nos constrante, nos transforma e acima de tudo nos fascina.</p>
+        <p>A vida com Deus é uma consciência. Não tem nada a ver com o que devemos fazer, mas compreendemos algo que Cristo fez por nós e isso nos constrange, nos transforma e acima de tudo nos fascina.</p>
       </section>
-    </div>
-    <div class="features-row">
+
       <section>
         <span class="icon major fa-plus accent3"></span>
         <h3>Inclusivo</h3>
         <p>Somos uma igreja para os fracos, gente que se perdeu na caminhada, gente que nem fazia ideia que existia um caminho. Somos um mendigo que encontrou o pão e nossa missão consiste em mostrar a quem ainda tem fome, onde também encontrá-lo.</p>
       </section>
+
+    </div>
+    <div class="features-row">
+
+      <section>
+        <span class="icon major fa-users accent1"></span>
+        <h3>Relacionamentos</h3>
+        <p>É aí que nasce a Livres. Da ideia que estamos todos juntos, precisamos uns dos outros e que não somos melhores do que ninguém.</p>
+      </section>
+
       <section>
         <span class="icon major fa-handshake-o accent4"></span>
         <h3>Social</h3>
         <p>Entendemos que nosso comprometimento como igreja não é ser grande, rica ou politicamente influente, mas capacitar homens e mulheres  em todos os campos de ação humana: em casa, na empresa, no hospital, na universidade, na oficina, enfim, em todo lugar. Manifestando o amor de Jesus e sua justiça, tanto no âmbito pessoal como no âmbito comunitário.</p>
       </section>
+
     </div>
   </section>
 
