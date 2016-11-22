@@ -8,9 +8,10 @@
   <p>Digite abaixo seus dados e a gente vai atrás de você.</p>
 
   <form action="<?= get_config('site_url'); ?>script.participe.php" method="post">
+    <input type="hidden" name="pagina" value="<?= get_config('page'); ?>" />
     <div class="row uniform 50%">
       <div class="12u 12u(mobilep)">
-        <input type="text" name="nome"required="" placeholder="Seu nome" />
+        <input type="text" name="nome" required="" placeholder="Seu nome" />
       </div>
       <div class="6u 12u(mobilep)">
         <input type="email" name="email" required="" placeholder="Seu e-mail" />

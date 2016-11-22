@@ -2,7 +2,9 @@
 
 require_once(get_config('site_path') . 'incs/mails.php');
 
-function mail_participe_getHtml($nome, $email, $telefone, $cidade){
+function mail_participe_getHtml($nome, $email, $telefone, $cidade, $pagina){
+
+  $pagina = get_config('site_url') . $pagina;
 
   $html = '<html>
   <head>
@@ -33,6 +35,7 @@ function mail_participe_getHtml($nome, $email, $telefone, $cidade){
           <li><strong>E-mail:</strong> ' . $email . '</li>
           <li><strong>Cidade / UF:</strong> ' . $cidade . '</li>
         </ul>
+        <p>Você preencheu o formulário através da página: <a href="' . $pagina . '">' . $pagina . '</a></p>
       </td>
     </tr>
   </table>
@@ -50,14 +53,14 @@ Copyright 2016 LIVRE Movimento Cristão.
 
 }
 
-function mail_participe_send($nome, $email, $telefone, $cidade){
+function mail_participe_send($nome, $email, $telefone, $cidade, $pagina){
   global $mailer;
 
   $mailer->addAddress($email);
   $mailer->addCC('tiago@livresweb.com');
 
   $mailer->Subject = "Olá $nome, tâmo junto!";
-  $mailer->Body    = mail_participe_getHtml($nome, $email, $telefone, $cidade);
+  $mailer->Body    = mail_participe_getHtml($nome, $email, $telefone, $cidade, $pagina);
 
   if($mailer->send()) {
 
