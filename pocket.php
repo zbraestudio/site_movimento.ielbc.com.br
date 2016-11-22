@@ -1,9 +1,9 @@
 <?
 include('./incs/config.php');
 
-set_page_title('Quero participar');
-set_page_description('É proibida a participação de pessoas perfeitas. Então se você é como a gente, será muito bem vindo.');
-set_page_tags('participe, também quero, faça parte, quero participar, convite, inscrição, quero ir');
+set_page_title('Pocket');
+set_page_description('Veja se já existe um LIVRES Pocket na sua cidade? Se não existe, inicie um');
+set_page_tags('igreja, participar, grupo, congregar, pequeno grupo, corpo de cristo, evangelho, cristão');
 
 include('incs/inc.header.php');
 ?>
