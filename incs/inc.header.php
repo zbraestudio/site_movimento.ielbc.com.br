@@ -51,6 +51,7 @@ if(!get_config('robots_index')) {
     <nav id="nav">
       <ul>
         <li><a <?= get_config('page') == 'home'?'class="active" ':null; ?> href="<?= get_config('site_url')?>home">Home</a></li>
+        <li><a class="<?= get_config('page') == 'quiz'?'active':null; ?>" href="<?= get_config('site_url')?>quiz">Quiz</a></li>
         <li><a class="button <?= get_config('page') == 'participe'?'active':null; ?>" href="<?= get_config('site_url')?>participe">Quero participar!</a></li>
         <li><a  <?= get_config('page') == 'contato'?'class="active" ':null; ?>href="<?= get_config('site_url')?>contato">Contato</a></li>
        <!--<li>
