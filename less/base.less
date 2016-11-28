@@ -139,3 +139,17 @@ ul{
   list-style-position: inside;
 }
 
+
+
+form.quiz{
+  input[type="submit"]{
+    background-color: @cor-verde;
+    color: @cor-branco;
+
+    &:hover,
+    &:focus{
+      color: @cor-branco!important;
+      background-color: darken(@cor-verde, 10%);
+    }
+  }
+}
