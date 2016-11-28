@@ -32,7 +32,7 @@ include('incs/inc.header.php');
           <input type="text" name="cidade" required="" placeholder="Cidade / Estado" />
         </div>
         <div class="12u 12u(mobilep)">
-          <textarea name="pergunta"></textarea>
+          <textarea name="pergunta" required="" placeholder="Faça sua pergunta"></textarea>
         </div>
         <div class="12u 12u(mobilep)">
           <input type="submit" value="Enviar" class="fit" />
