@@ -2,7 +2,7 @@
 include('./incs/config.php');
 
 set_page_title('Quiz');
-set_page_description('É proibida a participação de pessoas perfeitas. Então se você é como a gente, será muito bem vindo.');
+set_page_description('Sabe aquela dúvida que você sempre teve? Ou talvez ouviu uma mensagem mas não ficou muito claro o assunto? Agora você pode perguntar!');
 set_page_tags('participe, também quero, faça parte, quero participar, convite, inscrição, quero ir');
 set_page_image(get_config('site_url') . 'images/quiz.jpg');
 
@@ -15,6 +15,7 @@ include('incs/inc.header.php');
 
     <p>Sabe aquela dúvida que você sempre teve?</p>
     <p>Ou talvez ouviu uma mensagem mas não ficou muito claro o assunto?</p>
+    <p>Agora você pode perguntar e crescer ainda mais. As perguntas selecionadas serão respondidas nos encontros NEXT's.</p>
 
 
     <form action="<?= get_config('site_url'); ?>script.quiz.php" class="quiz" method="post">
