@@ -15,7 +15,9 @@ if( $_SERVER['HTTP_HOST'] == 'localhost'){
 set_config('meta_title',          'LIVRES');
 set_config('meta_description',    'Uma Igreja pra quem não gosta de igreja e para pessoas de quem a igreja não gosta.');
 set_config('meta_tags',           'movimento, cristão, Jesus, evangelho, Graça, escândalo da Graça');
+set_config('meta_image',          'http://www.livresweb.com/images/shared.jpg');
 set_config('robots_index',        true);
+
 
 
 
@@ -46,6 +48,11 @@ function set_page_description($description){
 }
 function set_page_tags($tags){
   set_config('meta_tags', $tags);
+}
+
+
+function set_page_image($url){
+  set_config('meta_image', $url);
 }
 
 function set_page_noindex(){

@@ -13,7 +13,7 @@ global $isHome;
 
   <!-- Parâmetros da Página -->
   <link rel="icon" href="http://www.livresweb.com/favicon.png">
-  <meta property="og:image" content="http://www.livresweb.com/images/shared.jpg">
+  <meta property="og:image" content="<?= get_config('meta_image'); ?>">
   <meta name="keywords" content="<?= get_config('meta_tags'); ?>">
   <meta name="description" content="<?= get_config('meta_description'); ?>">
   <meta name="author" content="Z.BRA Estúdio (Balneário Camboriú, SC)">
