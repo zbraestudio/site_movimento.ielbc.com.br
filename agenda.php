@@ -19,20 +19,26 @@ include('incs/inc.header.php');
     $sql = 'SELECT * FROM Agenda';
     $sql .= " WHERE (`Data` >= NOW() AND DataFim IS NULL) OR (`Data` < NOW() AND DataFim >= NOW() ) AND Publicado = 'Y'";
     $sql .= ' ORDER BY `Data` ASC';
-    //$eventos =
-    ?>
-    <div class="evento">
-      <img src="https://placehold.it/960" class="imagem">
-      <div class="infos">
-        <h2>Start!</h2>
-        <h5>14/jan/2016, a partir das 20hrs.</h5>
-        <p>aeuhaueae</p>
+    $eventos = $db->LoadObjects($sql);
+
+    foreach($eventos as $evento) {
+      ?>
+      <div class="evento">
+        <a href="<?= get_config('sistema_upload_url') . $evento->Imagem; ?>" class="fancybox">
+          <img src="<?= get_config('sistema_upload_url') . $evento->Imagem; ?>" class="imagem">
+        </a>
+
+        <div class="infos">
+          <h2><?= $evento->Titulo; ?></h2>
+          <h5><?= $evento->DataTexto; ?></h5>
+
+          <?= $evento->Texto; ?>
+        </div>
+
+        <div class="clearboth"></div>
       </div>
-
-      <div class="clearboth"></div>
-    </div>
     <?
-
+    }
     ?>
 
   </div>

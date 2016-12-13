@@ -12,6 +12,12 @@ if( $_SERVER['HTTP_HOST'] == 'localhost'){
 
 }
 
+
+set_config('sistema_path',          '/dados/http/livresweb.com/sistema/');
+set_config('sistema_url',           'http://sistema.livresweb.com/');
+set_config('sistema_upload_path',   '/dados/http/livresweb.com/sistema/uploads/');
+set_config('sistema_upload_url',    'http://sistema.livresweb.com/uploads/');
+
 set_config('meta_title',          'LIVRES');
 set_config('meta_description',    'Uma Igreja pra quem não gosta de igreja e para pessoas de quem a igreja não gosta.');
 set_config('meta_tags',           'movimento, cristão, Jesus, evangelho, Graça, escândalo da Graça');
