@@ -132,10 +132,12 @@ section#cta p {
 /* CSS do Template */
 /* @import 'template/font-awesome.min.css'; @tihhgoncalves desativei pra usar a partir do BOWER */
 /* Tihh */
+#page-wrapper > header:not(.alt) #logo {
+  max-height: 85%;
+}
 #page-wrapper > header #logo {
   display: block;
   margin: 50px auto;
-  max-height: 85%;
   width: 200px;
   height: auto;
 }
@@ -238,4 +240,14 @@ section#banner .button:focus {
 .pg_contato textarea:focus {
   box-shadow: none !important;
   border: 1px solid #f4dc61 !important;
+}
+.pg_agenda .evento img.imagem {
+  max-width: 200px;
+  float: left;
+}
+.pg_agenda .evento .infos {
+  margin-left: 220px;
+}
+.pg_agenda .evento .infos h2 {
+  margin-bottom: 0;
 }

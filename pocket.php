@@ -1,5 +1,5 @@
 <?
-include('./incs/config.php');
+include('./incs/autoload.php');
 
 set_page_title('Pocket');
 set_page_description('Veja se já existe um LIVRES Pocket na sua cidade? Se não existe, inicie um');

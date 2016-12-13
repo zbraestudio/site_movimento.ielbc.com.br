@@ -1,5 +1,5 @@
 <?
-include('./incs/config.php');
+include('./incs/autoload.php');
 
 set_page_title('Quero participar');
 set_page_description('É proibida a participação de pessoas perfeitas. Então se você é como a gente, será muito bem vindo.');

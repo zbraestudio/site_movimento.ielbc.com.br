@@ -1,5 +1,5 @@
 <?
-include('./incs/config.php');
+include('./incs/autoload.php');
 
 set_page_title('Home');
 $isHome = true;

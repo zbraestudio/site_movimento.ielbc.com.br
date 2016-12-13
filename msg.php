@@ -1,6 +1,6 @@
 <?
 session_start();
-include('./incs/config.php');
+include('./incs/autoload.php');
 
 if(isset($_SESSION['msg'])){
 

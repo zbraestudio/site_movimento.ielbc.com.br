@@ -1,5 +1,5 @@
 <?
-include('./incs/config.php');
+include('./incs/autoload.php');
 
 set_page_title('Quiz');
 set_page_description('Sabe aquela dúvida que você sempre teve? Ou talvez ouviu uma mensagem mas não ficou muito claro o assunto? Agora você pode perguntar!');

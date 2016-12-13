@@ -1,5 +1,5 @@
 <?
-include('./incs/config.php');
+include('./incs/autoload.php');
 
 set_page_title('Contato');
 set_page_description('Envie uma mensagem que responderemos assim que possível.');
