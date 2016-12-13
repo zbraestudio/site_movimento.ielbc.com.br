@@ -5,6 +5,9 @@
 .clearboth {
   clear: both;
 }
+a {
+  color: #cb666b;
+}
 .button {
   background-color: #f4dc61;
   color: #201815;
@@ -129,6 +132,9 @@ form.quiz input[type="submit"]:focus {
 section#cta p {
   color: #ffffff !important;
 }
+.medium-insert-buttons {
+  display: none!important;
+}
 /* CSS do Template */
 /* @import 'template/font-awesome.min.css'; @tihhgoncalves desativei pra usar a partir do BOWER */
 /* Tihh */
@@ -241,12 +247,22 @@ section#banner .button:focus {
   box-shadow: none !important;
   border: 1px solid #f4dc61 !important;
 }
+.pg_agenda .evento {
+  margin: 40px 0;
+  min-height: 300px;
+}
+.pg_agenda .evento h2 {
+  font-size: 25px;
+  color: #cb666b;
+  font-weight: 400;
+}
 .pg_agenda .evento img.imagem {
-  max-width: 200px;
+  max-width: 300px;
+  height: auto;
   float: left;
 }
 .pg_agenda .evento .infos {
-  margin-left: 220px;
+  margin-left: 320px;
 }
 .pg_agenda .evento .infos h2 {
   margin-bottom: 0;

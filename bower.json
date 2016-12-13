@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "font-awesome": "^4.7.0",
-    "PHPMailer": "https://github.com/PHPMailer/PHPMailer.git#^5.2.16"
+    "PHPMailer": "https://github.com/PHPMailer/PHPMailer.git#^5.2.16",
+    "fancybox": "^2.1.5"
   }
 }

@@ -35,6 +35,9 @@ if(!get_config('robots_index')) {
   <!-- Font Awesome -->
   <link rel="stylesheet" href="<?= get_config('site_url'); ?>bower_components/font-awesome/css/font-awesome.min.css" />
 
+  <!-- Fancybox -->
+  <link rel="stylesheet" href="<?= get_config('site_url'); ?>bower_components/fancybox/source/jquery.fancybox.css" />
+
   <link rel="stylesheet" href="<?= get_config('site_url'); ?>css/less.css" />
   <!--[if lte IE 8]><link rel="stylesheet" href="<?= get_config('site_url'); ?>css/template/ie8.css" /><![endif]-->
 </head>

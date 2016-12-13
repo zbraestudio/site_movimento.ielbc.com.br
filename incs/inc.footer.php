@@ -28,6 +28,8 @@
 
 <script src="<?= get_config('site_url'); ?>js/svg.js"></script>
 
+<script src="<?= get_config('site_url'); ?>bower_components/fancybox/source/jquery.fancybox.js"></script>
+
 
 <!-- Google Analytics -->
 <script>
