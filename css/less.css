@@ -126,12 +126,16 @@ form.quiz input[type="submit"]:focus {
   color: #ffffff !important;
   background-color: #82a446;
 }
+section#cta p {
+  color: #ffffff !important;
+}
 /* CSS do Template */
 /* @import 'template/font-awesome.min.css'; @tihhgoncalves desativei pra usar a partir do BOWER */
 /* Tihh */
 #page-wrapper > header #logo {
   display: block;
   margin: 50px auto;
+  max-height: 85%;
   width: 200px;
   height: auto;
 }
