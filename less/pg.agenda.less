@@ -15,10 +15,29 @@
       max-width: 300px;
       height: auto;
       float: left;
+
+      @media screen and (max-width: 777px) {
+        max-width: 200px;
+      }
+
+      @media screen and (max-width: 470px) {
+        max-width: 100%;
+        display: block;
+        float: none;
+        margin: auto;
+        margin-bottom: 15px;
+      }
     }
 
     .infos{
       margin-left: 320px;
+
+      @media screen and (max-width: 777px) {
+        margin-left: 220px;
+      }
+      @media screen and (max-width: 470px) {
+        margin-left: 0;
+      }
 
       h2{
         margin-bottom: 0;

@@ -261,8 +261,32 @@ section#banner .button:focus {
   height: auto;
   float: left;
 }
+@media screen and (max-width: 777px) {
+  .pg_agenda .evento img.imagem {
+    max-width: 200px;
+  }
+}
+@media screen and (max-width: 470px) {
+  .pg_agenda .evento img.imagem {
+    max-width: 100%;
+    display: block;
+    float: none;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+}
 .pg_agenda .evento .infos {
   margin-left: 320px;
+}
+@media screen and (max-width: 777px) {
+  .pg_agenda .evento .infos {
+    margin-left: 220px;
+  }
+}
+@media screen and (max-width: 470px) {
+  .pg_agenda .evento .infos {
+    margin-left: 0;
+  }
 }
 .pg_agenda .evento .infos h2 {
   margin-bottom: 0;
