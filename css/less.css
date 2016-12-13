@@ -256,6 +256,10 @@ section#banner .button:focus {
   color: #cb666b;
   font-weight: 400;
 }
+.pg_agenda .evento h5 {
+  font-size: 19px;
+  font-weight: 400;
+}
 .pg_agenda .evento img.imagem {
   max-width: 300px;
   height: auto;
