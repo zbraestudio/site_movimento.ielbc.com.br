@@ -138,6 +138,9 @@ section#cta p {
 /* CSS do Template */
 /* @import 'template/font-awesome.min.css'; @tihhgoncalves desativei pra usar a partir do BOWER */
 /* Tihh */
+#page-wrapper > header {
+  z-index: 999;
+}
 #page-wrapper > header:not(.alt) #logo {
   max-height: 85%;
 }
