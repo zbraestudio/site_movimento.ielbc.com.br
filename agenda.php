@@ -2,7 +2,7 @@
 include('./incs/autoload.php');
 
 set_page_title('Agenda');
-set_page_description('Confira os próximos compromissos do LIVRES. Participe dos nossos encontros e eventos.');
+set_page_description('Confira os próximos compromissos da ESTAÇÃO. Participe dos nossos encontros e eventos.');
 set_page_tags('culto, encontro, reunião, grupos familiar, gp, pequeno grupo');
 
 include('incs/inc.header.php');
@@ -11,7 +11,7 @@ include('incs/inc.header.php');
   <div class="box">
     <h3>Agenda</h3>
 
-    <p>Confira abaixo os próximos compromissos do LIVRES. Participe dos nossos encontros e eventos.</p>
+    <p>Confira abaixo os próximos compromissos da ESTAÇÃO. Participe dos nossos encontros e eventos.</p>
 
 
     <?

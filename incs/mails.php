@@ -12,7 +12,7 @@ $mailer->Password =         'nw041203';
 $mailer->Port =             587;
 $mailer->CharSet = "UTF-8";
 $mailer->addEmbeddedImage(get_config('site_path') . 'mails/logo.png', 'logo');
-$mailer->setFrom('tiago@livresweb.com', 'LIVRES');
+$mailer->setFrom('tiago@livresweb.com', 'ESTAÇÃO');
 $mailer->isHTML(true);
 
 ?>
