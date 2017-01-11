@@ -10,13 +10,13 @@
 
   #logo{
     display: block;
-    margin: 50px auto;
+    margin: 75px auto;
 
-    width: 200px;
+    width: 350px;
     height: auto;
 
-    path {
-      fill: @cor-amarelo;
+    path, polygon {
+      fill: @cor-principal;
     }
 
 
@@ -29,7 +29,7 @@
 
     #logo {
 
-      width: 50px;
+      /* width: 50px; */
       margin-top: 3px;
 
     }
@@ -56,25 +56,25 @@
 
           &:hover,
           &:focus{
-            color: @cor-amarelo;
+            color: @cor-principal;
           }
 
 
 
           &.button{
 
-            color: @cor-amarelo;
+            color: @cor-principal;
             border: 0;
             box-shadow: none!important;
             line-height: 31px;
 
             &.active{
-              border-bottom:1px solid fade(@cor-amarelo, 25%)!important;
+              border-bottom:1px solid fade(@cor-principal, 25%)!important;
             }
 
             &:hover,
             &:focus{
-              background-color: @cor-amarelo!important;
+              background-color: @cor-principal!important;
               color: @cor-preto!important;
             }
           }

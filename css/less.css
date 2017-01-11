@@ -6,11 +6,11 @@
   clear: both;
 }
 a {
-  color: #cb666b;
+  color: #ac2047;
 }
 .button {
-  background-color: #f4dc61;
-  color: #201815;
+  background-color: #14a79d;
+  color: #3d3a41;
   border: 0;
   box-shadow: none !important;
   line-height: 50px;
@@ -21,14 +21,14 @@ a {
 }
 .button:hover,
 .button:focus {
-  background-color: #201815;
-  color: #f4dc61 !important;
+  background-color: #3d3a41;
+  color: #14a79d !important;
 }
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-  background-color: #f4dc61;
-  color: #201815;
+  background-color: #14a79d;
+  color: #3d3a41;
   border: 0;
   box-shadow: none !important;
   line-height: 50px;
@@ -43,17 +43,17 @@ input[type="button"]:hover,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  background-color: #201815;
-  color: #f4dc61 !important;
+  background-color: #3d3a41;
+  color: #14a79d !important;
 }
 body {
-  color: #201815;
+  color: #3d3a41;
 }
 p {
   font-size: 18px;
   line-height: 30px;
   margin-bottom: 20px;
-  color: #201815;
+  color: #3d3a41;
 }
 p b,
 p strong {
@@ -62,37 +62,37 @@ p strong {
 h3 {
   font-weight: 400;
   font-family: 'Source Sans Pro', sans-serif;
-  color: #201815;
+  color: #3d3a41;
 }
 h4 {
   font-weight: 600;
   font-family: 'Source Sans Pro', sans-serif;
   text-transform: uppercase;
   font-size: 14px;
-  color: #201815;
+  color: #3d3a41;
 }
 section#main .icon.major.accent1 {
-  background: #cb666b;
+  background: #ac2047;
   color: #ffffff;
 }
 section#main .icon.major.accent2 {
-  background: #f4dc61;
-  color: #201815;
+  background: #14a79d;
+  color: #3d3a41;
 }
 section#main .icon.major.accent3 {
-  background: #6662a2;
+  background: #568e5f;
   color: #ffffff;
 }
 section#main .icon.major.accent4 {
-  background: #9bbc61;
-  color: #201815;
+  background: #f0f291;
+  color: #3d3a41;
 }
 section#main .icon.major.accent5 {
-  background: #201815;
-  color: #f4dc61;
+  background: #3d3a41;
+  color: #14a79d;
 }
 section#cta {
-  background-color: #cb666b;
+  background-color: #3d3a41;
 }
 section#cta p {
   font-size: 22px;
@@ -106,34 +106,49 @@ section#cta form {
 }
 section#cta form input[type="submit"]:hover,
 section#cta form input[type="submit"]:focus {
-  background: rgba(255, 255, 255, 0.15) none repeat scroll 0 0;
-  color: #ffffff !important;
+  background: #14a79d;
+  color: #3d3a41 !important;
 }
 #navButton .toggle::before {
-  background-color: #201815;
+  background-color: #3d3a41;
 }
 #navButton .toggle:hover::before {
-  background-color: #f4dc61;
-  color: #201815;
+  background-color: #14a79d;
+  color: #3d3a41;
 }
 ul {
   list-style-type: unset;
   list-style-position: inside;
 }
 form.quiz input[type="submit"] {
-  background-color: #9bbc61;
-  color: #ffffff;
+  background-color: #14a79d;
+  color: #3d3a41;
 }
 form.quiz input[type="submit"]:hover,
 form.quiz input[type="submit"]:focus {
-  color: #ffffff !important;
-  background-color: #82a446;
+  color: #14a79d !important;
+  background-color: #3d3a41;
 }
 section#cta p {
   color: #ffffff !important;
 }
 .medium-insert-buttons {
   display: none!important;
+}
+#cta input[type="submit"],
+#cta input[type="reset"],
+#cta input[type="button"],
+#cta .button {
+  background-color: #14a79d;
+  color: #ffffff;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #14a79d;
+  box-shadow: 0 0 0 1px #14a79d;
 }
 /* CSS do Template */
 /* @import 'template/font-awesome.min.css'; @tihhgoncalves desativei pra usar a partir do BOWER */
@@ -146,18 +161,19 @@ section#cta p {
 }
 #page-wrapper > header #logo {
   display: block;
-  margin: 50px auto;
-  width: 200px;
+  margin: 75px auto;
+  width: 350px;
   height: auto;
 }
-#page-wrapper > header #logo path {
-  fill: #f4dc61;
+#page-wrapper > header #logo path,
+#page-wrapper > header #logo polygon {
+  fill: #14a79d;
 }
 #page-wrapper > header:not(.alt) {
-  background-color: #201815 !important;
+  background-color: #3d3a41 !important;
 }
 #page-wrapper > header:not(.alt) #logo {
-  width: 50px;
+  /* width: 50px; */
   margin-top: 3px;
 }
 #page-wrapper > header nav ul li a {
@@ -173,21 +189,21 @@ section#cta p {
 }
 #page-wrapper > header nav ul li a:hover,
 #page-wrapper > header nav ul li a:focus {
-  color: #f4dc61;
+  color: #14a79d;
 }
 #page-wrapper > header nav ul li a.button {
-  color: #f4dc61;
+  color: #14a79d;
   border: 0;
   box-shadow: none!important;
   line-height: 31px;
 }
 #page-wrapper > header nav ul li a.button.active {
-  border-bottom: 1px solid rgba(244, 220, 97, 0.25) !important;
+  border-bottom: 1px solid rgba(20, 167, 157, 0.25) !important;
 }
 #page-wrapper > header nav ul li a.button:hover,
 #page-wrapper > header nav ul li a.button:focus {
-  background-color: #f4dc61 !important;
-  color: #201815 !important;
+  background-color: #14a79d !important;
+  color: #3d3a41 !important;
 }
 @media screen and (max-width: 840px) {
   #page-wrapper > header {
@@ -219,8 +235,8 @@ section#banner p {
   color: #ffffff;
 }
 section#banner .button {
-  background-color: #f4dc61;
-  color: #201815;
+  background-color: #14a79d;
+  color: #3d3a41;
   border: 0;
   box-shadow: none !important;
   line-height: 50px;
@@ -231,8 +247,8 @@ section#banner .button {
 }
 section#banner .button:hover,
 section#banner .button:focus {
-  background-color: #201815;
-  color: #f4dc61 !important;
+  background-color: #3d3a41;
+  color: #14a79d !important;
 }
 .pg_contato input[type="text"],
 .pg_contato input[type="password"],
@@ -248,7 +264,7 @@ section#banner .button:focus {
 .pg_contato select:focus,
 .pg_contato textarea:focus {
   box-shadow: none !important;
-  border: 1px solid #f4dc61 !important;
+  border: 1px solid #14a79d !important;
 }
 .pg_agenda .evento {
   margin: 40px 0;
@@ -256,7 +272,7 @@ section#banner .button:focus {
 }
 .pg_agenda .evento h2 {
   font-size: 25px;
-  color: #cb666b;
+  color: #ac2047;
   font-weight: 400;
 }
 .pg_agenda .evento h5 {

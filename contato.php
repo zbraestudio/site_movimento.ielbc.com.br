@@ -36,9 +36,8 @@ include('incs/inc.header.php');
       </div>
       <div class="row uniform">
         <div class="12u">
-          <ul class="actions align-center">
-            <li><input type="submit" value="Enviar mensagem" /></li>
-          </ul>
+            <input type="submit" class="fit" value="Enviar mensagem" />
+
         </div>
       </div>
     </form>

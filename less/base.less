@@ -3,11 +3,11 @@
 }
 
 a{
-  color: @cor-vermelho;
+  color: @cor1;
 }
 
 .button {
-  background-color: @cor-amarelo;
+  background-color: @cor-principal;
   color: @cor-preto;
   border: 0;
   box-shadow: none !important;
@@ -19,7 +19,7 @@ a{
   &:hover,
   &:focus {
     background-color: @cor-preto;
-    color: @cor-amarelo !important;
+    color: @cor-principal !important;
   }
 }
 input[type="submit"],
@@ -60,28 +60,28 @@ section#main{
 
 
   .icon.major.accent1 {
-    background: @cor-vermelho;
+    background: @cor1;
     color: @cor-branco;
   }
 
   .icon.major.accent2 {
-    background: @cor-amarelo;
+    background: @cor-principal;
     color: @cor-preto;
   }
 
   .icon.major.accent3 {
-    background: @cor-roxo;
+    background: @cor2;
     color: @cor-branco;
   }
 
   .icon.major.accent4 {
-    background: @cor-verde;
+    background: @cor3;
     color: @cor-preto;
   }
 
   .icon.major.accent5 {
     background: @cor-preto;
-    color: @cor-amarelo;
+    color: @cor-principal;
   }
 
 
@@ -89,7 +89,7 @@ section#main{
 
 section#cta{
 
-  background-color: @cor-vermelho;
+  background-color: @cor-preto;
 
   p{
     font-size: 22px;
@@ -107,8 +107,8 @@ section#cta{
 
       &:hover,
       &:focus{
-        background: rgba(255, 255, 255, 0.15) none repeat scroll 0 0;
-        color: @cor-branco!important;
+        background: @cor-principal;
+        color: @cor-preto!important;
       }
 
     }
@@ -130,7 +130,7 @@ section#cta{
 
     &:hover{
       &::before{
-        background-color: @cor-amarelo;
+        background-color: @cor-principal;
         color: @cor-preto;
       }
     }
@@ -147,13 +147,13 @@ ul{
 
 form.quiz{
   input[type="submit"]{
-    background-color: @cor-verde;
-    color: @cor-branco;
+    background-color: @cor-principal;
+    color: @cor-preto;
 
     &:hover,
     &:focus{
-      color: @cor-branco!important;
-      background-color: darken(@cor-verde, 10%);
+      color: @cor-principal!important;
+      background-color: @cor-preto;
     }
   }
 }
@@ -172,4 +172,26 @@ section#cta{
 
 .medium-insert-buttons{
   display: none!important;
+}
+
+
+
+#cta{
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"],
+  .button{
+    background-color:  @cor-principal;
+    color: @cor-branco;
+  }
+}
+
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus{
+  border-color: @cor-principal;
+  box-shadow: 0 0 0 1px @cor-principal;
 }
