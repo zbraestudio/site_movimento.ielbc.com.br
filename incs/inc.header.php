@@ -48,7 +48,7 @@ if(!get_config('robots_index')) {
   <header id="header" <?= ($isHome)?'class="alt"':null; ?>>
     <a href="index.php">
       <?/* file_get_contents(get_config('site_path') . 'images/logos/livres.svg');*/ ?>
-      <img src="<?= get_config('site_url') . 'images/logos/estacao_church_logo.svg';  ?>" class="svg" id="logo">
+      <img src="<?= get_config('site_url') . 'images/logos/estacao-igreja-logo.svg';  ?>" class="svg" id="logo">
       <div class="clearboth"></div>
     </a>
     <nav id="nav">
