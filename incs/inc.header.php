@@ -27,7 +27,7 @@ global $isHome;
   <meta property="og:image" content="<?= get_config('meta_image'); ?>">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="628">
-  
+
 <?
 if(!get_config('robots_index')) {
 ?>

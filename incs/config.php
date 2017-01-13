@@ -21,7 +21,7 @@ set_config('sistema_upload_url',    'http://sistema.livresweb.com/uploads/');
 set_config('meta_title',          'ESTAÇÃO');
 set_config('meta_description',    'Uma Igreja pra quem não gosta de igreja e para pessoas de quem a igreja não gosta.');
 set_config('meta_tags',           'movimento, cristão, Jesus, evangelho, Graça, escândalo da Graça');
-set_config('meta_image',          'http://www.livresweb.com/images/shared.jpg');
+set_config('meta_image',          'http://www.livresweb.com/images/shared2.jpg');
 set_config('robots_index',        true);
 
 
