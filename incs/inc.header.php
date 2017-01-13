@@ -23,7 +23,11 @@ global $isHome;
   <meta property="og:title" content="<?= get_config('meta_title'); ?>">
   <meta property="og:description" content="<?= get_config('meta_description'); ?>">
   <meta property="og:site_name" content="<?= get_config('meta_title'); ?>">
+
   <meta property="og:image" content="<?= get_config('meta_image'); ?>">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="628">
+  
 <?
 if(!get_config('robots_index')) {
 ?>
