@@ -13,11 +13,16 @@ global $isHome;
 
   <!-- Parâmetros da Página -->
   <link rel="icon" href="http://www.livresweb.com/favicon.png">
-  <meta property="og:image" content="<?= get_config('meta_image'); ?>">
   <meta name="keywords" content="<?= get_config('meta_tags'); ?>">
   <meta name="description" content="<?= get_config('meta_description'); ?>">
   <meta name="author" content="Z.BRA Estúdio (Balneário Camboriú, SC)">
 
+  <!-- Metas do Facebook -->
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="<?=get_config('site_url') . get_config('page'); ?>">
+  <meta property="og:title" content="<?= get_config('meta_title'); ?>">
+  <meta property="og:site_name" content="<?= get_config('meta_title'); ?>">
+  <meta property="og:image" content="<?= get_config('meta_image'); ?>">
 <?
 if(!get_config('robots_index')) {
 ?>
@@ -25,6 +30,7 @@ if(!get_config('robots_index')) {
     <meta name="googlebot" content="noindex">
     <meta name="robots" content="noindex">
 <?
+
 }
 ?>
 
