@@ -21,6 +21,7 @@ global $isHome;
   <meta property="og:locale" content="pt_BR">
   <meta property="og:url" content="<?=get_config('site_url') . get_config('page'); ?>">
   <meta property="og:title" content="<?= get_config('meta_title'); ?>">
+  <meta property="og:description" content="<?= get_config('meta_description'); ?>">
   <meta property="og:site_name" content="<?= get_config('meta_title'); ?>">
   <meta property="og:image" content="<?= get_config('meta_image'); ?>">
 <?
