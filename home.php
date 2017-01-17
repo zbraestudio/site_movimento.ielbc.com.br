@@ -40,7 +40,7 @@ include('incs/inc.header.php');
       <section>
         <span class="icon major fa-users accent1"></span>
         <h3>Relacionamentos</h3>
-        <p>É aí que nasce a Livres. Da ideia que estamos todos juntos, precisamos uns dos outros e que não somos melhores do que ninguém.</p>
+        <p>É aí que nasce a Estação. Da ideia que estamos todos juntos, precisamos uns dos outros e que não somos melhores do que ninguém.</p>
       </section>
 
       <section>
