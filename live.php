@@ -4,6 +4,7 @@ include('./incs/autoload.php');
 set_page_title('Live');
 set_page_description('Acompanhe nossos encontros ao vivo.');
 set_page_tags('culto, ao vivo, live, congregar, igreja');
+set_page_image(get_config('site_url') . 'images/live.jpg');
 
 include('incs/inc.header.php');
 ?>
