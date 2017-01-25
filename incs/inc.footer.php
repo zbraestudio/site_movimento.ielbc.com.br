@@ -57,3 +57,8 @@
 </html>
 
 
+<!-- Bootstrap Device Debug -->
+<link rel="stylesheet" href="<?= get_config('site_url'); ?>bower_components/bootstrap-device-debug/bootstrap-device-debug.css" />
+<script src="<?= get_config('site_url'); ?>bower_components/bootstrap-device-debug/bootstrap-device-debug.js"></script>
+
+

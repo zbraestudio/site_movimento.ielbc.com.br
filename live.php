@@ -15,9 +15,9 @@ include('incs/inc.header.php');
   </header>
   <div class="box">
     <!--<span class="image featured"><img src="images/live.jpg" alt="" /></span>-->
-    <center>
-      <iframe width="640" height="360" src="https://www.youtube.com/embed/LIfit7-_3vI" frameborder="0" allowfullscreen></iframe>
-    </center>
+    <div class="youtube">
+      <iframe src="https://www.youtube.com/embed/LIfit7-_3vI" frameborder="0" allowfullscreen></iframe>
+    </div>
 
 
 
