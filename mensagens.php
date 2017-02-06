@@ -1,9 +1,9 @@
 <?
 include('./incs/autoload.php');
 
-set_page_title('Contato');
-set_page_description('Envie uma mensagem que responderemos assim que poss�vel.');
-set_page_tags('fale conosco, mensagem, fale com a gente, converse, socorro, ajuda, pergunta');
+set_page_title('Mensagens');
+set_page_description('Confira em áugio e/ou vídeo as ministrações que rolam na Estação.');
+set_page_tags('pregação, sermão, ministração, mensagem, culto');
 
 include('incs/inc.header.php');
 ?>
