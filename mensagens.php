@@ -2,7 +2,7 @@
 include('./incs/autoload.php');
 
 set_page_title('Mensagens');
-set_page_description('Confira em áugio e/ou vídeo as ministrações que rolam na Estação.');
+set_page_description('Confira em áudio e/ou vídeo as ministrações que rolam na Estação.');
 set_page_tags('pregação, sermão, ministração, mensagem, culto');
 
 include('incs/inc.header.php');
